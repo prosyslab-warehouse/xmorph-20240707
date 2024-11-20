@@ -1,0 +1,15 @@
+<gtkmorph session>
+<image file in>
+/home/debdev/xmorph/xmorph-20031129/example/C/grid.ppm
+</image file in>
+<preserve aspect>
+1
+</preserve aspect>
+<mesh file>
+/home/debdev/xmorph/xmorph-20031129/example/C/grid.ppm.mesh
+</mesh file>
+<morph factors>
+1.000000 1.000000
+</morph factors>
+</image>
+</gtkmorph session>

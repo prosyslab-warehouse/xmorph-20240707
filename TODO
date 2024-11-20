@@ -1,0 +1,56 @@
+XMORPH TO DO
+
+I think it would be really cool and very appropriate if I got "before"
+and "after" pictures of Michael Jackson and morphed one into the other
+as a test.  If anybody has such images, please send them to me.
+
+I have access to a Win95 machine, but not to a Macintosh with a C
+compiler, so I can not test tkmorph on a Macintosh.  I would appreciate
+if someone helped me out with development on a Mac.
+
+Enhance interpolation routines to handle situations where the mesh
+lines are not a true function (i.e. where a single abscissa has more
+than one ordinate.)  This should be easy to fix either by
+parameterizing the spline or by using line segments for the
+interpolant.  There is not really good reason not to use line segments
+for interpolants anyway -- they are easier and faster to compute and
+their behavior is more predictable than cubic splines.  Line segments
+are less smooth but generally there will be so many knots that
+smoothing just gets in the way.
+
+Fix the problem where the last vertical line and the last horizontal
+line are black after a warp.  This is probably a problem with the
+interpolation arrays.
+
+Support a wider range of image file types, including JPEG, PPM, and
+TIFF in xmorph.
+(gtkmorph reads all formats that gdk-pixbuf libraries support).
+
+If anybody is interested in helping out on these things, please let me
+know.
+
+THE NEW PROJECT TODO
+
+The new autoconf/automake building environment
+has not been widely tested (yet).
+
+In particular, the X libraries are not well managed:
+(ie, it may not work on SGI IRIX).
+
+The GIMP plugin feature is not automatically configurable thru 
+"configure" (yet); you may try to tweak in "Makefile.conf".
+
+language translate 
+
+the locale may play strange tricks to people saving and
+loading the meshes, if they have 
+the LANG environment or some LC_* environment;
+it would be important to deactivate such locales
+when saving and loading mesh data.
+
+GTKMORPH TODO
+
+implement undo
+
+docs!! docbook  format? html?
+

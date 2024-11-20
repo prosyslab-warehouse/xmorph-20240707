@@ -1,0 +1,42 @@
+.\" Copyright (c) 2000 A Mennucci ; stolen from the xmorph.1 page
+.TH GTKMORPH 1
+
+.SH NAME
+gtkmorph \- image warping and dissolving (morphing) for GTK toolkit
+
+
+.SH SYNOPSIS
+.B gtkmorph
+
+.SH DESCRIPTION
+.B gtkmorph
+is a digital image warping and dissolving program, also known as a
+"morphing" program.  The primary
+use of
+.B gtkmorph
+is to generate and modify meshes which control the shape of an image.
+.B gtkmorph
+also has the capacity to dissolve images together, and to generate a
+sequence of warped and dissolved images.  When this sequence is made
+into a movie, it is called a "morph".
+.B gtkmorph 
+will  write images in .ppm format and load them in any format supported by the
+.B gdk-pixbuf
+library; this includes JPEG, PNG,  and TIFF.
+
+.LP
+.B gtkmorph
+uses a library called
+.B libmorph
+which can be used separately in the creation of other morphing
+programs.
+
+.SH BUGS
+Report bugs to gourlay@colorado-research.com or mennucc1@debian.org
+
+.SH "SEE ALSO"
+.BR xmorph (1),
+
+.SH "WEB SITE"
+http://sourceforge.net/projects/xmorph
+

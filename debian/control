@@ -1,0 +1,80 @@
+Source: xmorph
+Section: graphics
+Build-Depends: gettext, libtool, autotools-dev, debhelper (>= 7.0.0),  libx11-dev, libxt-dev, x11proto-core-dev, libxaw7-dev, xbitmaps, texinfo, bsdmainutils, libgtk2.0-dev, libwaili-dev (>= 19990723-16), dh-autoreconf
+Priority: optional
+Maintainer: A Mennucc1 <mennucc1@debian.org>
+Standards-Version: 3.9.5.0
+Vcs-SVN: svn://svn.code.sf.net/p/xmorph/code/
+Vcs-Browser: https://sourceforge.net/p/xmorph/code/HEAD/tree/
+
+Package: libmorph
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: xmorph (<< 1:20140707~)
+Replaces: xmorph (<< 1:20140707~)
+Priority: optional
+Section: libs
+Description: digital image warping library
+ libmorph warps images; the warping technique was invented and first used by
+ Industrial Light and Magic, and is commonly called "morphing."
+ libmorph also contains utilities to handle control meshes, that are
+ line grids that are used to design an image warp.
+
+Package: xmorph
+Architecture: any
+Depends: dpkg (>= 1.15.4) | install-info, ${misc:Depends}, ${shlibs:Depends}
+Suggests: imagemagick | netpbm | xmorph-example
+Priority: optional
+Section: graphics
+Description:  digital image warp and morph (x11)
+ Xmorph loads, saves, warps, and dissolves images, and loads, saves, creates,
+ and manipulates control meshes which determine the warping.  The technique
+ was invented and first used by Industrial Light and Magic, and is commonly
+ called "morphing".
+ .
+ Xmorph uses the Targa image format exclusively.  Other software is needed to
+ convert to other image formats or to movies.  (Due to a bug, Xmorph's images
+ are unreadable by John Bradley's XV.)
+ .
+ xmorph is a GUI for libmorph, using the X Toolkit; the package also contains
+ a text-only program called morph.
+
+Package: libmorph-dev
+Architecture: any
+Depends: ${misc:Depends}, libmorph (= ${binary:Version})
+Priority: optional
+Section: libdevel
+Description: digital image warping library (development files)
+ This package contains header files for, and a static version of, the libmorph
+ library.
+
+Package: gtkmorph
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: imagemagick, gtkmorph-example
+Conflicts: xmorph (<< 20030121)
+Priority: optional
+Section: graphics
+Description:  Digital image warp and morph (gtk)
+ gtkmorph loads, saves, warps, and dissolves images, and loads, saves,
+ creates, and manipulates control meshes which determine the warping.   The
+ technique was invented and first used by Industrial Light and Magic, and is
+ commonly called "morphing."
+ .
+ gtkmorph is a GUI for libmorph, using GTK+.  It has many features, as the
+ support for making movies automatically (it needs extra packages).
+
+Package: gtkmorph-example
+Architecture: all
+Depends: ${misc:Depends}, gtkmorph | xmorph
+Provides: xmorph-example
+Priority: optional
+Section: graphics
+Description:  digital image warp and morph, examples
+ gtkmorph loads, saves, warps, and dissolves images, and loads, saves,
+ creates, and manipulates control meshes which determine the warping.  It has
+ support for making movies automatically (it needs extra packages).  The
+ technique was invented and first used by Industrial Light and Magic, and is
+ commonly called "morphing."
+ .
+ This package contains an example session, that can be used also with xmorph.

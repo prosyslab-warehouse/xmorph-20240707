@@ -1,0 +1,146 @@
+
+following is the an excerpt of the old README that was written M.J.Gourlay;
+it is now obsolete, and is kept mostly for historical reasons
+
+			A Mennucci
+
+-----------------------------------------------------------------------------
+
+DISTRIBUTION
+
+I  have occasionally found xmorph being distributed without
+my consent on CDROM's, (and on some CDROM's with my consent).  I
+generally have no problem letting people distribute xmorph on CD,
+except that I want to have a copy of the CD for myself.  Also, if I
+know about the CD, I can tell people to buy it, so it is to our mutual
+advantage to let me know about CD's with xmorph.
+
+Digital Equipment Corporation gives out their Multimedia Showcase CDROM
+for free to interested Digital UNIX Alpha users.  If you own a DEC
+Alpha, I suppose that you can ask DEC for this CDROM.
+
+SGI distributes Xmorph on their Freeware CDROM and web site.
+If you have an SGI, look at
+  http://freeware.sgi.com/
+
+A major computer manufacturer distributes a very old (1996) version of
+Xmorph with their machines which is broken, buggy, and lacks several
+important features (such as the ability to use 24-bit displays).  If
+you have been using the version that comes with some machines, then you
+might be wasting your time with crippled code, and my credibility of a
+programmer has been diminished.  This is the sort of problem I want to
+avoid by having people who want to print CDROM's first consult with me
+to make sure they have the latest version or that they notify their
+users or customers about how to obtain new versions from me.
+
+Beware that versions released on CD are more than likely not the latest
+version, since CD's last forever but latest versions last for a few
+months.
+
+The place where I make official new releases of xmorph is at my web
+site and sometimes at the Open Group X11 FTP site with the rest of the
+X Window System contributed software.  Look for xmorph in ftp.x.org
+(was export.lcs.mit.edu) in the contrib directory hierarchy, in the
+applications or graphics subdirectories:
+
+  ftp://ftp.x.org/contrib/applications
+  ftp://ftp.x.org/contrib/graphics
+
+The Open Group site is mirrored around the world.  Please find the Open
+Group mirror most appropriate for you.  There are several mirrors in
+Europe, and from what I am told, if you are in Europe, network delays
+calling Open Group directly are very bad, so look for a mirror local to
+you.
+
+NOTE:  Since the X Window System FTP site changes its structure each
+time they make a new major release of the X Window System, the place
+where the latest xmorph can be found might change.  I make a new
+release about twice a year, so if the version you find is much older
+than about six months, then it is probably not the latest version.
+
+A Linux version is being maintained and that version is kept at
+sunsite.unc.edu along with other Linux software for X, but their version
+is ancient.
+
+A direct source of the source code is through my home page.  I put
+releases up at this location more often than anywhere else:
+  http://www.colorado-research.com/~gourlay/
+  http://www.colorado-research.com/~gourlay/software/
+  http://www.colorado-research.com/~gourlay/software/Graphics/
+  http://www.colorado-research.com/~gourlay/software/Graphics/Xmorph/
+
+
+DISPLAY HARDWARE NOTES
+
+Xmorph is designed to work on static gray 1-bit, pseudo-color 8-bit,
+and true-color 24-bit displays.  If you are running on a static gray
+or pseudo-color display, the images that show up in the xmorph image
+panels are dithered (which makes them look grainy), but the images
+stored internally are full-color non-dithered, and the image files
+written by xmorph are full-color non-dithered.  Do not let the
+relatively poor image quality of the dithered image panels concern
+you.  They are only "schematic" images to let you manipulate the
+meshes.  Remember that the xmorph graphical user interface is
+primarily used to manipulate meshes, not to display images.  To view
+your morphs in full glory requires that you make an animation of your
+image sequence.
+
+Notes about color dithering:
+
+I have made the color dithering routines within xmorph somewhat
+generic, in the sense that you can choose the number of bits per
+channel that you want to use when creating the so-called ``dithering
+colormap''.  Look in "diw_map.h".  You can change the number of bits
+used to represent each of the channels red, green, and blue.  It is
+generally believed that the human eye is most sensitive to green, and
+least sensitive to blue, so it makes sense to give more bits to green
+and fewer to blue.  However, one could imagine that somebody could
+prefer to give more bits to another color, or whatever you want.
+
+Also, for 16-bit colormapped displays (which are becoming more common
+now), you could conceivably use up 8 bits or more for your colormap
+without worrying about interference with other programs.  I would
+recommend using a RGB-332 dithering colormap in that case.
+
+Another thing:  Some monochrome displays simulate PseudoColor by
+allowing the applications to have a colormap.  This makes application
+programming more simple.  The X server then has the responsibility
+of dithering from color to monochrome.  Some such monochrome systems
+have a 4-bit PseudoColor simulation mode which could conceivably be
+used with xmorph, if some changes were made in the "dither_image"
+routine in "image_x.c".  The colormap situation is easy to deal
+with: Just use 1 bit per channel to get an RGB-111 dithering colormap.
+
+tkmorph uses Tk PhotoImages to display images and the dithering is a
+built-in function that I have relatively little control over.  However,
+the Tk PhotoImage dithering seems to be fast and clean so I'm more than
+satisfied with it.  In any case, the displayed image is dithered but
+the actual images that are written to output files are not dithered, as
+in xmorph.
+
+
+
+
+
+
+WORLD WIDE WEB SITES
+
+The main Xmorph web site is at
+  http://www.colorado-research.com/~gourlay/software/Graphics/Xmorph/
+That site has source code, example images, meshes and morph movies.
+
+For xmorph animations see Andy Thaller's WWW home page at
+  http://www.informatik.tu-muenchen.de/cgi-bin/nph-gateway/hphalle2/~thaller
+
+The old one was at this address:
+  http://www.informatik.tu-muenchen.de/cgi-bin/nph-gateway/hphalle8/~thaller
+
+There is a weird morph on Bruno Boettcher's home page:
+  http://erm6.u-strasbg.fr/~bboett/fr.index.html
+
+
+
+
+Please report to me if you have animations that are cool that you would
+like other people to see.
+

@@ -1,0 +1,29 @@
+
+PROJECT NAME:  xmorph
+
+AUTHOR: "A Mennucci" <debian@tonelli.sns.it>, aug 2000
+
+COPYRIGHT: GPL
+
+BASED ON: «xmorph», Written and Copyright (C) 1994-2000 by Michael J. Gourlay
+
+DESCRIPTION: xmorph-gtk is a GUI (=graphical user interface) for the
+ morphing engine in xmorph, with some enhancement
+
+DEPENDS: you will need to have the source code of xmorph,
+ and the libraries:        glib gdk gdk-pixbuf gtk
+ and the includes from these libraries
+ (in "Debian GNU/Linux" they are in the '-dev' packages)
+ 
+INSTALL: 
+   first, you have to obtain a copy of xmorph, unpack it in the subdirectory
+   «xmorph/»,    read the instructions, 
+    set it up (by editing the Makefile as desired), and build the library
+    "libmorph.a" 
+    
+   second, you have to build and install this package: issue 
+    $ sh ./configure
+    $ make
+    at the prompt; if this fails, please read the file "INSTALL"
+
+EVENTUALLY: have fun

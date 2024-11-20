@@ -1,0 +1,33 @@
+<gtkmorph session>
+<resulting_size>
+256 256
+</resulting_size>
+<image>
+<image file in>
+grid.ppm
+</image file in>
+<preserve aspect>
+1
+</preserve aspect>
+<mesh file>
+grid.ppm.mesh
+</mesh file>
+<morph factors>
+0.5 0.5
+</morph factors>
+</image>
+<image>
+<image file in>
+circuit.ppm
+</image file in>
+<preserve aspect>
+1
+</preserve aspect>
+<mesh file>
+circuit.ppm.mesh
+</mesh file>
+<morph factors>
+0.5 0.5
+</morph factors>
+</image>
+</gtkmorph session>

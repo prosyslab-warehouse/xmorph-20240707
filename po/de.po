@@ -1,0 +1,2113 @@
+# Translation of xmorph to German
+# Copyright (C) 1994-2000 Michael J. Gourlay, 2000 Gourlay, Mennucci.
+# This file is distributed under the same license as the xmorph package.
+# Chris Leick <c.leick@vollbio.de>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xmorph 1:20090606\n"
+"Report-Msgid-Bugs-To: mennucc1@debian.org\n"
+"POT-Creation-Date: 2014-07-06 23:50+0200\n"
+"PO-Revision-Date: 2014-07-06 23:58+0200\n"
+"Last-Translator: Chris Leick <c.leick@vollbio.de>\n"
+"Language-Team: German <debian-l10n-german@lists.debian.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: glade2/support.c:90 glade2/support.c:114 glade1/support.c:121
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Pixmap-Datei konnte nicht gefunden werden: %s"
+
+#: glade2/interface.c:154 glade1/interface.c:141 po/gtkmorph.glade2.c:7
+#: po/gtkmorph.glade.c:7
+msgid "gtkmorph"
+msgstr "gtkmorph"
+
+#: glade2/interface.c:166 glade1/interface.c:160 po/gtkmorph.glade2.c:8
+#: po/gtkmorph.glade.c:9
+msgid "File"
+msgstr "Datei"
+
+#: glade2/interface.c:175 gtkmorph/callbacks_main.c:181 glade1/interface.c:177
+#: po/gtkmorph.glade2.c:9 po/gtkmorph.glade.c:10
+msgid "load session"
+msgstr "Sitzung laden"
+
+#: glade2/interface.c:180 gtkmorph/callbacks_main.c:198 glade1/interface.c:185
+#: po/gtkmorph.glade2.c:10 po/gtkmorph.glade.c:11
+msgid "save session"
+msgstr "Sitzung speichern"
+
+#: glade2/interface.c:191 glade1/interface.c:202 po/gtkmorph.glade2.c:11
+#: po/gtkmorph.glade.c:12
+msgid "add an image"
+msgstr "ein Bild hinzufügen"
+
+#: glade2/interface.c:196 po/gtkmorph.glade2.c:13
+msgid "load a difference"
+msgstr "einen Unterschied laden"
+
+#: glade2/interface.c:200 po/gtkmorph.glade2.c:12
+msgid ""
+"load a \"differential mesh\", that is a mesh representing the difference of "
+"two meshes"
+msgstr ""
+"ein »unterschiedliches Kontrollpolygonnetz« laden, welches ein "
+"Kontrollpolygonnetz ist, das den Unterschied zweier Kontrollpolygonnetze "
+"repräsentiert."
+
+#: glade2/interface.c:208 glade1/interface.c:219 po/gtkmorph.glade2.c:14
+#: po/gtkmorph.glade.c:13
+msgid "Quit"
+msgstr "Beenden"
+
+#: glade2/interface.c:216 glade1/interface.c:230 po/gtkmorph.glade2.c:15
+#: po/gtkmorph.glade.c:14
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: glade2/interface.c:225 glade1/interface.c:246 po/gtkmorph.glade2.c:16
+#: po/gtkmorph.glade.c:15
+msgid "show all images"
+msgstr "alle Bilder anzeigen"
+
+#: glade2/interface.c:230 glade1/interface.c:254 po/gtkmorph.glade2.c:17
+#: po/gtkmorph.glade.c:16
+msgid "show mag"
+msgstr "Magazin anzeigen"
+
+#: glade2/interface.c:241 glade1/interface.c:271 po/gtkmorph.glade2.c:18
+#: po/gtkmorph.glade.c:17
+msgid "resulting image size..."
+msgstr "resultierende Bildgröße ..."
+
+#: glade2/interface.c:246 glade1/interface.c:279 po/gtkmorph.glade2.c:19
+#: po/gtkmorph.glade.c:18
+msgid "show morph factors"
+msgstr "Umwandlungsfaktoren anzeigen"
+
+#: glade2/interface.c:251 glade1/interface.c:287 po/gtkmorph.glade2.c:20
+#: po/gtkmorph.glade.c:19
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: glade2/interface.c:256 glade1/interface.c:295 po/gtkmorph.glade2.c:21
+#: po/gtkmorph.glade.c:20
+msgid "Morph"
+msgstr "Morph"
+
+#: glade2/interface.c:265 glade1/interface.c:311 po/gtkmorph.glade2.c:23
+#: po/gtkmorph.glade.c:22
+msgid "interpolate meshes"
+msgstr "Kontrollpolygonnetze interpolieren"
+
+#: glade2/interface.c:269 glade1/interface.c:318 po/gtkmorph.glade2.c:22
+#: po/gtkmorph.glade.c:21
+msgid ""
+"the mesh of the resulting image is set to an interpolation of the input "
+"images' meshes, weighted by the ``mesh factors''"
+msgstr ""
+"das Kontrollpolygonnetz des resultierenden Bildes wird auf eine "
+"Interpolation des Eingabebildkontrollpolygonnetzes gesetzt, gewichtet durch "
+"»Kontrollpolygonnetzfaktoren«"
+
+#: glade2/interface.c:271 glade1/interface.c:320 po/gtkmorph.glade2.c:25
+#: po/gtkmorph.glade.c:24
+msgid "morph images"
+msgstr "Bilder umwandeln"
+
+#: glade2/interface.c:275 glade1/interface.c:327 po/gtkmorph.glade2.c:24
+#: po/gtkmorph.glade.c:23
+msgid ""
+"the input images are warped to the resulting mesh and blended using ``image "
+"blending factors'' as weights. It has the same effect as if you hit all the "
+"``do warp'' buttons and then you hit the ``do blending'' button"
+msgstr ""
+"die Eingabebilder werden zum resultierenden Kontrollpolygonnetz verzerrt und "
+"unter Benutzung von »Bildverzerrungsfaktoren« gemischt. Es hat den gleichen "
+"Effekt, als wenn Sie alle »verzerren«-Knöpfe und dann den »vermischen«-Knopf "
+"drücken."
+
+#: glade2/interface.c:286 glade1/interface.c:341 po/gtkmorph.glade2.c:27
+#: po/gtkmorph.glade.c:26
+msgid "adjust all meshes"
+msgstr "alle Kontrollpolygonnetze anpassen"
+
+#: glade2/interface.c:290 glade1/interface.c:348 po/gtkmorph.glade2.c:26
+#: po/gtkmorph.glade.c:25
+msgid "adjust points of meshes confronting original images and the morph"
+msgstr ""
+"Punkte des Kontrollpolygonnetzes durch Gegenüberstellen der Originalbilder "
+"und der Gestaltänderung anpassen"
+
+#: glade2/interface.c:292 glade1/interface.c:350 po/gtkmorph.glade2.c:29
+#: po/gtkmorph.glade.c:28
+msgid "wavelet equalize"
+msgstr "Angleichen einer kleinen Welle"
+
+#: glade2/interface.c:296 glade1/interface.c:357 po/gtkmorph.glade2.c:28
+#: po/gtkmorph.glade.c:27
+msgid ""
+"equalize input images so that the subband of wavelet transform have the same "
+"energies"
+msgstr ""
+"Eingabebilder angleichen, so dass das Unterband der Umwandlung der kleinen "
+"Welle die gleichen Energien hat"
+
+#: glade2/interface.c:304 glade1/interface.c:368 po/gtkmorph.glade2.c:30
+#: po/gtkmorph.glade.c:29
+msgid "restore morph coefficients..."
+msgstr "Umwandlungskoeffizienten wiederherstellen ..."
+
+#: glade2/interface.c:313 glade2/interface.c:338 glade1/interface.c:384
+#: glade1/interface.c:425 po/gtkmorph.glade2.c:31 po/gtkmorph.glade2.c:36
+#: po/gtkmorph.glade.c:30 po/gtkmorph.glade.c:35
+msgid "start"
+msgstr "Start"
+
+#: glade2/interface.c:318 glade2/interface.c:343 glade1/interface.c:392
+#: glade1/interface.c:433 po/gtkmorph.glade2.c:32 po/gtkmorph.glade2.c:37
+#: po/gtkmorph.glade.c:31 po/gtkmorph.glade.c:36
+msgid "end"
+msgstr "Ende"
+
+#: glade2/interface.c:323 glade1/interface.c:400 po/gtkmorph.glade2.c:33
+#: po/gtkmorph.glade.c:32
+msgid "equal"
+msgstr "gleich"
+
+#: glade2/interface.c:328 glade1/interface.c:408 po/gtkmorph.glade2.c:35
+#: po/gtkmorph.glade.c:34
+msgid "store morph coefficients..."
+msgstr "Umwandlungskoeffizienten speichern ..."
+
+#: glade2/interface.c:332 glade1/interface.c:415 po/gtkmorph.glade2.c:34
+#: po/gtkmorph.glade.c:33
+msgid ""
+"stores internally the state of all mesh and image-blending factors (to make "
+"morph sequences)"
+msgstr ""
+"speichert intern den Status aller Kontrollpolygonnetz- und "
+"Bildvermischungsfaktoren (um Umwandlungsabfolgen zu erzeugen)"
+
+#: glade2/interface.c:348 glade1/interface.c:441 po/gtkmorph.glade2.c:39
+#: po/gtkmorph.glade.c:38
+msgid "morph sequence"
+msgstr "Umwandlungsabfolge"
+
+#: glade2/interface.c:352 glade1/interface.c:448 po/gtkmorph.glade2.c:38
+#: po/gtkmorph.glade.c:37
+msgid ""
+"create and save many morphs, equally spaced between the morph start and the "
+"morph end (that you have already stored with the above menu)"
+msgstr ""
+"viele Umwandlungen mit gleichem Abstand zwischen dem Umwandlungsanfang und "
+"dem Umwandlungsende erstellen und speichern (die Sie bereits mit dem Menü "
+"darüber gespeichert haben)"
+
+#: glade2/interface.c:360 glade1/interface.c:459 po/gtkmorph.glade2.c:40
+#: po/gtkmorph.glade.c:39 po/gtkmorph.glade.c:191
+msgid "Help"
+msgstr "Hilfe"
+
+#: glade2/interface.c:369 glade1/interface.c:475 po/gtkmorph.glade2.c:41
+#: po/gtkmorph.glade.c:40
+msgid "guide..."
+msgstr "Anleitung ..."
+
+#: glade2/interface.c:374 po/gtkmorph.glade2.c:42
+msgid "load example session"
+msgstr "Beispielsitzung laden"
+
+#: glade2/interface.c:385 glade1/interface.c:492 po/gtkmorph.glade2.c:43
+#: po/gtkmorph.glade.c:41
+msgid "help..."
+msgstr "Hilfe ..."
+
+#: glade2/interface.c:394 glade1/interface.c:508 po/gtkmorph.glade2.c:44
+#: po/gtkmorph.glade.c:42
+msgid "generic help"
+msgstr "allgemeine Hilfe"
+
+#: glade2/interface.c:399 glade1/interface.c:516 po/gtkmorph.glade2.c:45
+#: po/gtkmorph.glade.c:43
+msgid "warp help"
+msgstr "Verzerrungshilfe"
+
+#: glade2/interface.c:404 po/gtkmorph.glade2.c:46
+msgid "mesh tips"
+msgstr "Kontrollpolygonnetz-Tipps"
+
+#: glade2/interface.c:409 glade1/interface.c:524 po/gtkmorph.glade2.c:47
+#: po/gtkmorph.glade.c:44
+msgid "morph help"
+msgstr "Umwandlungshilfe"
+
+#: glade2/interface.c:414 po/gtkmorph.glade2.c:48
+msgid "feature help"
+msgstr "Hilfe für Merkmal"
+
+#: glade2/interface.c:425 glade1/interface.c:541 po/gtkmorph.glade2.c:49
+#: po/gtkmorph.glade.c:45
+msgid "why the beep?"
+msgstr "Warum das Piepen?"
+
+#: glade2/interface.c:440 glade2/interface.c:1240 glade1/interface.c:565
+#: glade1/interface.c:1342 po/gtkmorph.glade2.c:51 po/gtkmorph.glade2.c:108
+#: po/gtkmorph.glade.c:47 po/gtkmorph.glade.c:105
+msgid ""
+"load\n"
+"image"
+msgstr ""
+"Bild\n"
+"laden"
+
+#: glade2/interface.c:445 glade1/interface.c:573 po/gtkmorph.glade2.c:50
+#: po/gtkmorph.glade.c:46
+msgid ""
+"load the image. This image may not be warped or morphed, but it may help in "
+"setting the resulting mesh"
+msgstr ""
+"das Bild laden. Dieses Bild könnte nicht verzerrt oder umgewandelt sein, "
+"aber es könnte beim Setzen des resultierenden Kontrollpolygonnetzes helfen"
+
+#: glade2/interface.c:447 glade2/interface.c:1246 glade1/interface.c:575
+#: glade1/interface.c:1351 po/gtkmorph.glade2.c:53 po/gtkmorph.glade2.c:110
+#: po/gtkmorph.glade.c:49 po/gtkmorph.glade.c:107
+msgid ""
+"load\n"
+"mesh"
+msgstr ""
+"Kontrollpolygonnetz\n"
+"laden"
+
+#: glade2/interface.c:453 glade2/interface.c:1252 glade1/interface.c:584
+#: glade1/interface.c:1360 po/gtkmorph.glade2.c:55 po/gtkmorph.glade2.c:112
+#: po/gtkmorph.glade.c:51 po/gtkmorph.glade.c:109
+msgid ""
+"save\n"
+"mesh"
+msgstr ""
+"Kontrollpolygonnetz\n"
+"speichern"
+
+#: glade2/interface.c:464 glade1/interface.c:601 po/gtkmorph.glade2.c:57
+#: po/gtkmorph.glade.c:53
+msgid ""
+"``edit template'': view the loaded image and edit the mesh on it. \\n ``view "
+"morphed'': view the result of morphing.     ``v.morph&mesh'' as above but "
+"with the mesh.  ``edit eyes points'' sets the reference position of the eyes"
+msgstr ""
+"»Schablone bearbeiten«: Sehen Sie sich das geladene Bild an und bearbeiten "
+"Sie das daraufliegende Kontrollpolygonnetz. \\n »Umgewandeltes ansehen«: "
+"Sehen Sie das Resultat der Umwandlung. »Umwandlung & Kontrollpolygonnetz "
+"ansehen« wie oben, aber mit dem Kontrollpolygonnetz. »Augenpunkte "
+"bearbeiten« setzt die Bezugsposition der Augen."
+
+#: glade2/interface.c:469 glade1/interface.c:603 po/gtkmorph.glade2.c:58
+#: po/gtkmorph.glade.c:54
+msgid "edit template"
+msgstr "Schablone bearbeiten"
+
+#: glade2/interface.c:474 glade1/interface.c:606 po/gtkmorph.glade2.c:59
+#: po/gtkmorph.glade.c:55
+msgid "view morph"
+msgstr "Umwandlung ansehen"
+
+#: glade2/interface.c:479 glade1/interface.c:609 po/gtkmorph.glade2.c:60
+#: po/gtkmorph.glade.c:56
+msgid "v morph&meshes"
+msgstr "Umwandlung & Kontrollpolygonnetz ansehen"
+
+#: glade2/interface.c:484 glade1/interface.c:612 po/gtkmorph.glade2.c:61
+#: po/gtkmorph.glade.c:57
+msgid "edit eyes points"
+msgstr "Augenpunkte bearbeiten"
+
+#: glade2/interface.c:491 glade2/interface.c:1297 glade1/interface.c:617
+#: glade1/interface.c:1393 po/gtkmorph.glade2.c:62 po/gtkmorph.glade2.c:122
+#: po/gtkmorph.glade.c:58 po/gtkmorph.glade.c:116
+msgid "settings"
+msgstr "Einstellungen"
+
+#: glade2/interface.c:497 glade1/interface.c:626 po/gtkmorph.glade2.c:64
+#: po/gtkmorph.glade.c:60
+msgid ""
+"interpol.\n"
+"meshes"
+msgstr ""
+"Interpolation\n"
+"Kontrollpolygonnetze"
+
+#: glade2/interface.c:502 glade1/interface.c:634 po/gtkmorph.glade2.c:63
+#: po/gtkmorph.glade.c:59
+msgid ""
+"set this mesh to be an interpolation of all other meshes, using ``mesh "
+"factors'' as weights"
+msgstr ""
+"stellt unter Benutzung von »Kontrollpolygonnetzfaktoren« als Gewicht ein, "
+"dass dieses Kontrollpolygonnetz eine Interpolation aller anderen "
+"Kontrollpolygonnetze ist"
+
+#: glade2/interface.c:504 glade1/interface.c:636 po/gtkmorph.glade2.c:67
+#: po/gtkmorph.glade.c:63
+msgid ""
+"do\n"
+"blending"
+msgstr "vermischen"
+
+#: glade2/interface.c:509 glade1/interface.c:644 po/gtkmorph.glade2.c:66
+#: po/gtkmorph.glade.c:62
+msgid ""
+"mix all the warped images in the ``resulting image'' using ``image blending "
+"factors'' as weights"
+msgstr ""
+"alle verzerrten Bilder im »Ergebnisbild« mixen unter Benutzung von "
+"»Bildvermischungsfaktoren« als Gewicht"
+
+#: glade2/interface.c:511 glade1/interface.c:646 po/gtkmorph.glade2.c:70
+#: po/gtkmorph.glade.c:66
+msgid ""
+"do\n"
+"morph"
+msgstr ""
+"wandle\n"
+"um"
+
+#: glade2/interface.c:516 glade1/interface.c:654 po/gtkmorph.glade2.c:69
+#: po/gtkmorph.glade.c:65
+msgid ""
+"the input images are warped to the resulting mesh and blended using ``image "
+"blending factors'' as weights.  It has the same effect as if you hit all the "
+"``do warp'' buttons and then you hit the ``do blending'' button."
+msgstr ""
+"die Eingabebilder werden unter Benutzung von »Bildvermischungsfaktoren« als "
+"Gewicht zu einem resultierenden Kontrollpolygonnetz verzerrt. Es hat den "
+"gleichen Effekt, als wenn Sie alle »verzerren«-Knöpfe und dann den "
+"»vermischen«-Knopf drücken."
+
+#: glade2/interface.c:518 glade2/interface.c:1310 glade1/interface.c:656
+#: glade1/interface.c:1412 po/gtkmorph.glade2.c:73 po/gtkmorph.glade2.c:127
+#: po/gtkmorph.glade.c:69 po/gtkmorph.glade.c:121
+msgid ""
+"save\n"
+"image"
+msgstr ""
+"Bild\n"
+"speichern"
+
+#: glade2/interface.c:523 glade2/interface.c:1315 glade1/interface.c:664
+#: glade1/interface.c:1420 po/gtkmorph.glade2.c:72 po/gtkmorph.glade2.c:126
+#: po/gtkmorph.glade.c:68 po/gtkmorph.glade.c:120
+msgid "it saves whatever image is currently shown in the window"
+msgstr "es speichert welches Bild auch immer aktuell im Fenster angezeigt wird"
+
+#: glade2/interface.c:525 glade2/interface.c:1317 glade1/interface.c:666
+#: glade1/interface.c:1422 po/gtkmorph.glade2.c:76 po/gtkmorph.glade2.c:130
+#: po/gtkmorph.glade.c:72 po/gtkmorph.glade.c:124
+msgid "guide"
+msgstr "Anleitung"
+
+#: glade2/interface.c:530 glade2/interface.c:1322 glade1/interface.c:674
+#: glade1/interface.c:1430 po/gtkmorph.glade2.c:75 po/gtkmorph.glade2.c:129
+#: po/gtkmorph.glade.c:71 po/gtkmorph.glade.c:123
+msgid "back to guide"
+msgstr "zurück zur Anleitung"
+
+#: glade2/interface.c:572 glade1/interface.c:734 po/gtkmorph.glade2.c:78
+#: po/gtkmorph.glade.c:74
+msgid "new"
+msgstr "neu"
+
+#: glade2/interface.c:577 glade1/interface.c:742 po/gtkmorph.glade2.c:77
+#: po/gtkmorph.glade.c:73
+msgid "add new feature to the end of list"
+msgstr "neues Merkmal an das Ende der Liste hinzufügen"
+
+#: glade2/interface.c:579 glade1/interface.c:744 po/gtkmorph.glade2.c:79
+#: po/gtkmorph.glade.c:75
+msgid "rename"
+msgstr "umbenennen"
+
+#: glade2/interface.c:585 glade1/interface.c:753 po/gtkmorph.glade2.c:81
+#: po/gtkmorph.glade.c:77
+msgid "pack"
+msgstr "packen"
+
+#: glade2/interface.c:590 glade1/interface.c:761 po/gtkmorph.glade2.c:80
+#: po/gtkmorph.glade.c:76
+msgid "pack the selected points in this feature"
+msgstr "die gewählten Punkte in dieses Merkmal packen"
+
+#: glade2/interface.c:592 glade1/interface.c:763 po/gtkmorph.glade2.c:83
+#: po/gtkmorph.glade.c:79
+msgid "unpack"
+msgstr "entpacken"
+
+#: glade2/interface.c:597 glade1/interface.c:771 po/gtkmorph.glade2.c:82
+#: po/gtkmorph.glade.c:78
+msgid "unpack this feature and transforms all points of it to selected points"
+msgstr ""
+"dieses Merkmal entpacken und alle Punkte davon in ausgewählte Punkte "
+"umwandeln"
+
+#: glade2/interface.c:599 glade1/interface.c:773 po/gtkmorph.glade2.c:85
+#: po/gtkmorph.glade.c:81
+msgid "delete"
+msgstr "löschen"
+
+#: glade2/interface.c:604 glade1/interface.c:781 po/gtkmorph.glade2.c:84
+#: po/gtkmorph.glade.c:80
+msgid "delete last feature"
+msgstr "letztes Merkmal löschen"
+
+#: glade2/interface.c:614 glade2/interface.c:2508 glade1/interface.c:795
+#: glade1/interface.c:2656 po/gtkmorph.glade2.c:87 po/gtkmorph.glade2.c:199
+#: po/gtkmorph.glade.c:83 po/gtkmorph.glade.c:194
+msgid "edit"
+msgstr "bearbeiten"
+
+#: glade2/interface.c:622 glade2/interface.c:2515 glade1/interface.c:796
+#: glade1/interface.c:2657 po/gtkmorph.glade2.c:86 po/gtkmorph.glade2.c:198
+#: po/gtkmorph.glade.c:82 po/gtkmorph.glade.c:193
+msgid "move single point"
+msgstr "einzelnen Punkt bewegen"
+
+#: glade2/interface.c:628 glade2/interface.c:2520 glade1/interface.c:811
+#: glade1/interface.c:2670 po/gtkmorph.glade2.c:89 po/gtkmorph.glade2.c:201
+#: po/gtkmorph.glade.c:85 po/gtkmorph.glade.c:196
+msgid "move"
+msgstr "bewegen"
+
+#: glade2/interface.c:636 glade2/interface.c:2527 glade1/interface.c:812
+#: glade1/interface.c:2671 po/gtkmorph.glade2.c:88 po/gtkmorph.glade2.c:200
+#: po/gtkmorph.glade.c:84 po/gtkmorph.glade.c:195
+msgid "move whole feature"
+msgstr "gesamtes Merkmal bewegen"
+
+#: glade2/interface.c:641 glade2/interface.c:2533 glade1/interface.c:826
+#: glade1/interface.c:2685 po/gtkmorph.glade2.c:91 po/gtkmorph.glade2.c:203
+#: po/gtkmorph.glade.c:87 po/gtkmorph.glade.c:198
+msgid "stretch"
+msgstr "strecken"
+
+#: glade2/interface.c:649 glade2/interface.c:2540 glade1/interface.c:827
+#: glade1/interface.c:2686 po/gtkmorph.glade2.c:90 po/gtkmorph.glade2.c:202
+#: po/gtkmorph.glade.c:86 po/gtkmorph.glade.c:197
+msgid "stretch whole feature"
+msgstr "gesamtes Merkmal strecken"
+
+#: glade2/interface.c:658 glade1/interface.c:837 po/gtkmorph.glade2.c:92
+#: po/gtkmorph.glade.c:88
+msgid "-"
+msgstr "-"
+
+#: glade2/interface.c:665 glade1/interface.c:849 po/gtkmorph.glade2.c:93
+#: po/gtkmorph.glade.c:89
+msgid "select"
+msgstr "auswählen"
+
+#: glade2/interface.c:677 glade1/interface.c:864 po/gtkmorph.glade2.c:94
+#: po/gtkmorph.glade.c:90
+msgid "unselect"
+msgstr "Auswahl aufheben"
+
+#: glade2/interface.c:689 glade1/interface.c:879 po/gtkmorph.glade2.c:96
+#: po/gtkmorph.glade.c:92
+msgid "assign"
+msgstr "zuweisen"
+
+#: glade2/interface.c:697 glade1/interface.c:880 po/gtkmorph.glade2.c:95
+#: po/gtkmorph.glade.c:91
+msgid "assign point to feature"
+msgstr "Punkt einem Merkmal zuweisen"
+
+#: glade2/interface.c:725 glade2/interface.c:1350 gtkmorph/dialogs.c:85
+#: glade1/interface.c:908 glade1/interface.c:1450 po/gtkmorph.glade2.c:97
+#: po/gtkmorph.glade2.c:131 po/gtkmorph.glade.c:93 po/gtkmorph.glade.c:125
+msgid "error"
+msgstr "Fehler"
+
+#: glade2/interface.c:746 glade2/interface.c:1502 glade1/interface.c:951
+#: glade1/interface.c:1660 po/gtkmorph.glade2.c:98 po/gtkmorph.glade2.c:146
+#: po/gtkmorph.glade.c:95 po/gtkmorph.glade.c:141
+msgid "width"
+msgstr "Breite"
+
+#: glade2/interface.c:760 glade2/interface.c:1516 glade1/interface.c:971
+#: glade1/interface.c:1678 po/gtkmorph.glade2.c:99 po/gtkmorph.glade2.c:147
+#: po/gtkmorph.glade.c:96 po/gtkmorph.glade.c:142
+msgid "height"
+msgstr "Höhe"
+
+#: glade2/interface.c:774 glade1/interface.c:991 po/gtkmorph.glade2.c:100
+#: po/gtkmorph.glade.c:97
+msgid "x2"
+msgstr "x2"
+
+#: glade2/interface.c:780 glade1/interface.c:1000 po/gtkmorph.glade2.c:101
+#: po/gtkmorph.glade.c:98
+msgid "/2"
+msgstr "/2"
+
+#: glade2/interface.c:786 glade2/interface.c:1530 glade1/interface.c:1009
+#: glade1/interface.c:1696 po/gtkmorph.glade2.c:102 po/gtkmorph.glade2.c:148
+#: po/gtkmorph.glade.c:99 po/gtkmorph.glade.c:143
+msgid "apply"
+msgstr "bestätigen"
+
+#: glade2/interface.c:792 glade1/interface.c:933 po/gtkmorph.glade2.c:103
+#: po/gtkmorph.glade.c:94
+msgid "resulting image size"
+msgstr "resultierende Bildgröße"
+
+#: glade2/interface.c:797 po/gtkmorph.glade2.c:104
+msgid "welcome"
+msgstr "Willkommen"
+
+#: glade2/interface.c:1124 glade2/interface.c:1228 glade1/interface.c:1228
+#: glade1/interface.c:1323 po/gtkmorph.glade2.c:105 po/gtkmorph.glade2.c:107
+#: po/gtkmorph.glade.c:100 po/gtkmorph.glade.c:104
+msgid "error!"
+msgstr "Fehler!"
+
+#: glade2/interface.c:1133 glade1/interface.c:1240 po/gtkmorph.glade2.c:106
+#: po/gtkmorph.glade.c:101
+msgid "load the selected image"
+msgstr "das ausgewählte Bild laden"
+
+#: glade2/interface.c:1258 po/gtkmorph.glade2.c:115
+msgid ""
+"save\n"
+"diff"
+msgstr ""
+"Unterschied\n"
+"speichern"
+
+#: glade2/interface.c:1263 po/gtkmorph.glade2.c:114
+msgid "save difference from this mesh to other mesh"
+msgstr ""
+"Unterschiede von diesem Kontrollpolygonnetz in einem anderen "
+"Kontrollpolygonnetz speichern"
+
+#: glade2/interface.c:1270 glade1/interface.c:1377 po/gtkmorph.glade2.c:117
+#: po/gtkmorph.glade.c:111
+msgid ""
+"``edit mesh'': view the loaded image and edit the mesh on it.         ``view "
+"warp'': view the result of warping the loaded image from this mesh to the "
+"resulting mesh.               ``v. warp&meshes'' as before but with both "
+"meshes on.              ``choose subimage'' choose which subimage of the "
+"loaded image you wish to use.            You can also use the 'settings' "
+"button to change these settings more finely."
+msgstr ""
+"»Kontrollpolygonnetz bearbeiten«: Das geladene Bild ansehen und das "
+"Kontrollpolygonnetz darauf bearbeiten.         »Verzerrung ansehen«: Das "
+"Ergebnis der Verzerrung des geladenen Bildes von diesem Kontrollpolygonnetz "
+"zu dem resultierenden Kontrollpolygonnetz ansehen.              »Umwandlung "
+"& Kontrollpolygonnetz ansehen« wie vorher, aber mit beiden "
+"Kontrollpolygonnetzen darauf.              »Unterbild wählen« wählt welche "
+"Unterbild des geladenen Bildes Sie benutzen möchten.            Sie können "
+"außerdem den »Einstellungen«-Knopf benutzen, um diese Einstellung genauer zu "
+"setzen."
+
+#: glade2/interface.c:1275 glade1/interface.c:1379 po/gtkmorph.glade2.c:118
+#: po/gtkmorph.glade.c:112
+msgid "edit mesh"
+msgstr "Kontrollpolygonnetz bearbeiten"
+
+#: glade2/interface.c:1280 glade1/interface.c:1382 po/gtkmorph.glade2.c:119
+#: po/gtkmorph.glade.c:113
+msgid "view warp"
+msgstr "Verzerrung ansehen"
+
+#: glade2/interface.c:1285 glade1/interface.c:1385 po/gtkmorph.glade2.c:120
+#: po/gtkmorph.glade.c:114
+msgid "v. warp&meshes"
+msgstr "Umwandlung & Kontrollpolygonnetz ansehen"
+
+#: glade2/interface.c:1290 glade1/interface.c:1388 po/gtkmorph.glade2.c:121
+#: po/gtkmorph.glade.c:115
+msgid "choose subimage"
+msgstr "Unterbild auswählen"
+
+#: glade2/interface.c:1303 glade1/interface.c:1402 po/gtkmorph.glade2.c:124
+#: po/gtkmorph.glade.c:118
+msgid ""
+"do\n"
+"warp"
+msgstr "verzerren"
+
+#: glade2/interface.c:1308 glade1/interface.c:1410 po/gtkmorph.glade2.c:123
+#: po/gtkmorph.glade.c:117
+msgid ""
+"warp this image from this mesh to the resulting mesh, and show the result in "
+"this window or an accessory window"
+msgstr ""
+"dieses Bild von diesem Kontrollpolygonnetz zu dem "
+"Ergebniskontrollpolygonnetz verzerren und das Ergebnis in diesem oder einem "
+"zusätzlichen Fenster anzeigen"
+
+#: glade2/interface.c:1359 glade1/interface.c:1476 po/gtkmorph.glade2.c:132
+#: po/gtkmorph.glade.c:126
+msgid ""
+"these coefficents decide how much this image/mesh will influence the final "
+"morph"
+msgstr ""
+"diese Koeffizienten entscheiden, wie stark dieses Bild/Kontrollpolygonnetz "
+"die endgültige Umwandlung beeinflusst"
+
+#: glade2/interface.c:1374 glade1/interface.c:1497 po/gtkmorph.glade2.c:133
+#: po/gtkmorph.glade.c:128
+msgid ""
+"image\n"
+"blending"
+msgstr ""
+"Bild\n"
+"vermischen"
+
+#: glade2/interface.c:1382 glade2/interface.c:2670 glade1/interface.c:1507
+#: po/gtkmorph.glade2.c:135 po/gtkmorph.glade2.c:208 po/gtkmorph.glade.c:130
+msgid ""
+"mesh\n"
+"interp."
+msgstr ""
+"Kontrollpolygonnetz\n"
+"interpolieren"
+
+#: glade2/interface.c:1419 glade1/interface.c:1553 po/gtkmorph.glade2.c:137
+#: po/gtkmorph.glade.c:132
+msgid ""
+"when you morph the images, or you ``do mixing'', this factor will measure "
+"how much this image will show in the mixing in the resulting image"
+msgstr ""
+"wenn Sie diese Bilder umwandeln oder Sie »mixen«, wird dieser Faktor messen, "
+"wie viel dieses Bild im Mix des resultierenden Bildes zeigen wird"
+
+#: glade2/interface.c:1430 glade2/interface.c:2690 glade1/interface.c:1567
+#: po/gtkmorph.glade2.c:138 po/gtkmorph.glade2.c:210 po/gtkmorph.glade.c:133
+msgid ""
+"when you use the ``interpolate meshes'' function, the ``mesh factor'' "
+"measures how much this mesh will influence the resulting image's mesh"
+msgstr ""
+"wenn Sie die »Kontrollpolygonnetze interpolieren«-Funktion benutzen, misst "
+"der »Kontrollpolygonnetzfaktor«, wie stark dieses Kontrollpolygonnetz das "
+"Kontrollpolygonnetz des Ergebnisbildes beeinflusst"
+
+#: glade2/interface.c:1434 glade1/interface.c:1478 po/gtkmorph.glade2.c:139
+#: po/gtkmorph.glade.c:127
+msgid "coefficients"
+msgstr "Koeffizienten"
+
+#: glade2/interface.c:1454 glade1/interface.c:1595 po/gtkmorph.glade2.c:141
+#: po/gtkmorph.glade.c:136
+msgid "reset"
+msgstr "zurücksetzen"
+
+#: glade2/interface.c:1458 glade1/interface.c:1602 po/gtkmorph.glade2.c:140
+#: po/gtkmorph.glade.c:135
+msgid "infer the subimage from the eyes position"
+msgstr "das Unterbild aus der Augenposition schlussfolgern"
+
+#: glade2/interface.c:1464 glade1/interface.c:1611 po/gtkmorph.glade2.c:142
+#: po/gtkmorph.glade.c:137
+msgid "x coordinate of center"
+msgstr "x-Koordinate der Mitte"
+
+#: glade2/interface.c:1466 glade1/interface.c:1613 po/gtkmorph.glade2.c:143
+#: po/gtkmorph.glade.c:138
+msgid "c x"
+msgstr "c x"
+
+#: glade2/interface.c:1485 glade1/interface.c:1639 po/gtkmorph.glade2.c:144
+#: po/gtkmorph.glade.c:139
+msgid "y coordinate of center"
+msgstr "y-Koordinate der Mitte"
+
+#: glade2/interface.c:1487 glade1/interface.c:1641 po/gtkmorph.glade2.c:145
+#: po/gtkmorph.glade.c:140
+msgid "c y"
+msgstr "c y"
+
+#: glade2/interface.c:1536 glade1/interface.c:1579 po/gtkmorph.glade2.c:149
+#: po/gtkmorph.glade.c:134
+msgid "subimage position"
+msgstr "Unterbildposition"
+
+#: glade2/interface.c:1690 gtkmorph/dialogs.c:74 glade1/interface.c:1813
+#: po/gtkmorph.glade2.c:150 po/gtkmorph.glade.c:144
+msgid "warning"
+msgstr "Warnung"
+
+#: glade2/interface.c:1697 glade1/interface.c:1824 po/gtkmorph.glade2.c:152
+#: po/gtkmorph.glade.c:146
+msgid "warning!"
+msgstr "Warnung!"
+
+#: glade2/interface.c:1708 glade1/interface.c:1840 po/gtkmorph.glade2.c:151
+#: po/gtkmorph.glade.c:145
+msgid "ok"
+msgstr "Ok"
+
+#: glade2/interface.c:1753 gtkmorph/utils.c:358 glade1/interface.c:1879
+#: po/gtkmorph.glade2.c:153 po/gtkmorph.glade.c:147
+msgid "warped image"
+msgstr "verzerrtes Bild"
+
+#: glade2/interface.c:1785 po/gtkmorph.glade2.c:154
+msgid "<b>frame6</b>"
+msgstr "<b>frame6</b>"
+
+#: glade2/interface.c:1838 glade1/interface.c:1945 po/gtkmorph.glade2.c:155
+#: po/gtkmorph.glade.c:148
+msgid "unselect point"
+msgstr "Punktauswahl aufheben"
+
+#: glade2/interface.c:1843 glade1/interface.c:1953 po/gtkmorph.glade2.c:156
+#: po/gtkmorph.glade.c:149
+msgid "select point"
+msgstr "Punkt auswählen"
+
+#: glade2/interface.c:1848 glade1/interface.c:1961 po/gtkmorph.glade2.c:157
+#: po/gtkmorph.glade.c:150
+msgid "assign point"
+msgstr "Punkt zuweisen"
+
+#: glade2/interface.c:1853 glade1/interface.c:1969 po/gtkmorph.glade2.c:159
+#: po/gtkmorph.glade.c:151
+msgid "adjust"
+msgstr "anpassen"
+
+#: glade2/interface.c:1857 po/gtkmorph.glade2.c:158
+msgid "adjust mesh point position w.r.t. previous image"
+msgstr "Kontrollpolygonnetzpunktposition bezüglich vorherigem Bild anpassen"
+
+#: glade2/interface.c:1865 glade1/interface.c:1986 po/gtkmorph.glade2.c:160
+#: po/gtkmorph.glade.c:152
+msgid "add horizontal line"
+msgstr "horizontale Linie hinzufügen"
+
+#: glade2/interface.c:1873 glade1/interface.c:1997 po/gtkmorph.glade2.c:161
+#: po/gtkmorph.glade.c:153
+msgid "add vertical line"
+msgstr "vertikale Linie hinzufügen"
+
+#: glade2/interface.c:1881 glade1/interface.c:2008 po/gtkmorph.glade2.c:162
+#: po/gtkmorph.glade.c:154
+msgid "del horizontal line"
+msgstr "horizontale Linie löschen"
+
+#: glade2/interface.c:1889 glade1/interface.c:2019 po/gtkmorph.glade2.c:163
+#: po/gtkmorph.glade.c:155
+msgid "del vertical line"
+msgstr "vertikale Linie löschen"
+
+#: glade2/interface.c:1903 glade1/interface.c:2039 po/gtkmorph.glade2.c:164
+#: po/gtkmorph.glade.c:156
+msgid "smooth"
+msgstr "glatt"
+
+#: glade2/interface.c:1999 glade1/interface.c:2120 po/gtkmorph.glade2.c:165
+#: po/gtkmorph.glade.c:157
+msgid "gtkmorph movie"
+msgstr "gtkmorph-Film"
+
+#: glade2/interface.c:2020 glade1/interface.c:2145 po/gtkmorph.glade2.c:166
+#: po/gtkmorph.glade.c:158
+msgid "how many frames will be saved; each will be saved in a file"
+msgstr ""
+"wie viele Einzelbilder gespeichert werden. Jedes wird in einer Datei "
+"gespeichert"
+
+#: glade2/interface.c:2022 glade1/interface.c:2147 po/gtkmorph.glade2.c:167
+#: po/gtkmorph.glade.c:159
+msgid "how many frames"
+msgstr "wie viele Einzelbilder"
+
+#: glade2/interface.c:2049 glade1/interface.c:2181 po/gtkmorph.glade2.c:168
+#: po/gtkmorph.glade.c:160
+msgid ""
+"the files of the frames will be numbered sequentially starting from this "
+"number"
+msgstr ""
+"die Dateien der Einzelbilder werden von dieser Nummer beginnend fortlaufend "
+"nummeriert"
+
+#: glade2/interface.c:2051 glade1/interface.c:2183 po/gtkmorph.glade2.c:169
+#: po/gtkmorph.glade.c:161
+msgid "number of first file"
+msgstr "Nummer der ersten Datei"
+
+#: glade2/interface.c:2069 glade1/interface.c:2210 po/gtkmorph.glade2.c:170
+#: po/gtkmorph.glade.c:162
+msgid "file base name"
+msgstr "Dateibasisname"
+
+#: glade2/interface.c:2080 glade1/interface.c:2226 po/gtkmorph.glade2.c:171
+#: po/gtkmorph.glade.c:163
+msgid "frame"
+msgstr "Einzelbild"
+
+#: glade2/interface.c:2092 glade1/interface.c:2244 po/gtkmorph.glade2.c:173
+#: po/gtkmorph.glade.c:166
+msgid "create animated gif"
+msgstr "bewegtes GIF erzeugen"
+
+#: glade2/interface.c:2098 glade1/interface.c:2253 po/gtkmorph.glade2.c:172
+#: po/gtkmorph.glade.c:165
+msgid ""
+"creates an animated gif (needs 'convert' from imagemagick) and plays it "
+"(needs 'animate' from imagemagick)"
+msgstr ""
+"ein bewegtes GIF erzeugen (benötigt »convert« von Imagemagick) und es "
+"abspielen (benötigt »animate« von Imagemagick)"
+
+#: glade2/interface.c:2100 glade1/interface.c:2255 po/gtkmorph.glade2.c:175
+#: po/gtkmorph.glade.c:168
+msgid "animate sequence"
+msgstr "Abfolge bewegen"
+
+#: glade2/interface.c:2106 po/gtkmorph.glade2.c:174
+msgid ""
+"show animated sequence after saving it all  (on some platforms, it may need "
+"'animate' command from imagemagick)"
+msgstr ""
+"bewegte Abfolge anzeigen, nachdem alles gespeichert wurde (auf einigen "
+"Plattformen könnten Sie den »animate«-Befehl von Imagemagick benötigen)"
+
+#: glade2/interface.c:2108 glade1/interface.c:2266 po/gtkmorph.glade2.c:177
+#: po/gtkmorph.glade.c:170
+msgid "replay"
+msgstr "erneut abspielen"
+
+#: glade2/interface.c:2116 glade1/interface.c:2277 po/gtkmorph.glade2.c:176
+#: po/gtkmorph.glade.c:169
+msgid "resaves and replays animations"
+msgstr "Animationen erneut speichern und abspielen"
+
+#: glade2/interface.c:2118 glade1/interface.c:2279 po/gtkmorph.glade2.c:179
+#: po/gtkmorph.glade.c:172
+msgid "creates mpeg"
+msgstr "MPEG erzeugen"
+
+#: glade2/interface.c:2124 glade1/interface.c:2288 po/gtkmorph.glade2.c:178
+#: po/gtkmorph.glade.c:171
+msgid ""
+"creates an mpeg file and plays it; will use a parameter file (see help) "
+"(needs 'mpeg_encode' and 'mpeg_play')"
+msgstr ""
+"erzeugt eine MPEG-Datei und spielt sie ab. Wird eine Parameterdatei benutzen "
+"(siehe Hilfe) (benötigt »mpeg_encode« und »mpeg_play«)"
+
+#: glade2/interface.c:2126 po/gtkmorph.glade2.c:181
+msgid "create AVI MPEG4"
+msgstr "AVI-MPEG4 erzeugen"
+
+#: glade2/interface.c:2132 po/gtkmorph.glade2.c:180
+msgid "creates an AVI file in MPEG4 format (needs 'mplayer' and 'mencoder')"
+msgstr ""
+"erzeugt eine AVI-Datei im MPEG4-Format (benötigt »mplayer« und »mencoder«)"
+
+#: glade2/interface.c:2142 glade1/interface.c:2228 po/gtkmorph.glade2.c:182
+#: po/gtkmorph.glade.c:164
+msgid "animations"
+msgstr "Animationen"
+
+#: glade2/interface.c:2158 glade1/interface.c:2327 po/gtkmorph.glade2.c:183
+#: po/gtkmorph.glade.c:173
+msgid "creates and saves all morphs, builds animations"
+msgstr "erzeugt und speichert alle Umwandlungen, bildet Animationen"
+
+#: glade2/interface.c:2168 po/gtkmorph.glade2.c:184
+msgid "stops the computation of frames"
+msgstr "Stoppt die Berechnung von Einzelbildern"
+
+#: glade2/interface.c:2261 glade1/interface.c:2397 po/gtkmorph.glade2.c:185
+#: po/gtkmorph.glade.c:177
+msgid "gtkmorph guide"
+msgstr "gtkmorph-Anleitung"
+
+#: glade2/interface.c:2293 glade1/interface.c:2440 po/gtkmorph.glade2.c:187
+#: po/gtkmorph.glade.c:179
+msgid "prev"
+msgstr "vorheriger"
+
+#: glade2/interface.c:2298 glade1/interface.c:2448 po/gtkmorph.glade2.c:186
+#: po/gtkmorph.glade.c:178
+msgid "go back to previous guide pane"
+msgstr "zurück zum vorherigen Anleitungsfensterbereich gehen"
+
+#: glade2/interface.c:2300 glade1/interface.c:2450 po/gtkmorph.glade2.c:189
+#: po/gtkmorph.glade.c:181
+msgid "do it"
+msgstr "ausführen"
+
+#: glade2/interface.c:2305 glade1/interface.c:2458 po/gtkmorph.glade2.c:188
+#: po/gtkmorph.glade.c:180
+msgid "do what is proposed in this pane"
+msgstr "ausführen, was in diesem Fensterbereich vorgeschlagen wird"
+
+#: glade2/interface.c:2307 glade1/interface.c:2460 po/gtkmorph.glade2.c:191
+#: po/gtkmorph.glade.c:183
+msgid "next"
+msgstr "weiter"
+
+#: glade2/interface.c:2312 glade1/interface.c:2468 po/gtkmorph.glade2.c:190
+#: po/gtkmorph.glade.c:182
+msgid "skip this and go to next guide pane"
+msgstr "diesen überspringen und zum nächsten Anleitungsfensterbereich gehen"
+
+#: glade2/interface.c:2361 glade1/interface.c:2508 po/gtkmorph.glade2.c:192
+#: po/gtkmorph.glade.c:184
+msgid "question"
+msgstr "Frage"
+
+#: glade2/interface.c:2368 glade1/interface.c:2516 po/gtkmorph.glade2.c:195
+#: po/gtkmorph.glade.c:187
+msgid "question?"
+msgstr "Frage?"
+
+#: glade2/interface.c:2384 glade1/interface.c:2540 po/gtkmorph.glade2.c:193
+#: po/gtkmorph.glade.c:185
+msgid "Yes"
+msgstr "Ja"
+
+#: glade2/interface.c:2389 glade1/interface.c:2548 po/gtkmorph.glade2.c:194
+#: po/gtkmorph.glade.c:186
+msgid "No"
+msgstr "Nein"
+
+#: glade2/interface.c:2425 glade1/interface.c:2577 po/gtkmorph.glade2.c:196
+#: po/gtkmorph.glade.c:188
+msgid "Select Color"
+msgstr "Farbe auswählen"
+
+#: glade2/interface.c:2487 glade1/interface.c:2625 po/gtkmorph.glade2.c:197
+#: po/gtkmorph.glade.c:192
+msgid "window1"
+msgstr "window1"
+
+#: glade2/interface.c:2581 glade1/interface.c:2723 po/gtkmorph.glade2.c:204
+#: po/gtkmorph.glade.c:199
+msgid "gtkmorph mag"
+msgstr "gtkmorph-Magazin"
+
+#: glade2/interface.c:2594 glade1/interface.c:2741 po/gtkmorph.glade2.c:205
+#: po/gtkmorph.glade.c:200
+msgid "1"
+msgstr "1"
+
+#: glade2/interface.c:2605 glade1/interface.c:2759 po/gtkmorph.glade2.c:206
+#: po/gtkmorph.glade.c:201
+msgid "track"
+msgstr "Spur"
+
+#: glade2/interface.c:2662 gtkmorph/utils2_c:6 po/gtkmorph.glade2.c:207
+msgid "differential mesh"
+msgstr "unterschiedliches Kontrollpolygonnetz"
+
+#: gtkmorph/settings.c:84
+msgid "no warnings"
+msgstr "keine Warnungen"
+
+#: gtkmorph/settings.c:87
+msgid ""
+"dont warn, just beep; warnings may be read with 'why the beep' in the 'help' "
+"menu"
+msgstr ""
+"nicht warnen, nur piepen. Warnungen können mit »warum das Piepen« im "
+"»Hilfemenü« gelesen werden"
+
+#: gtkmorph/settings.c:91
+msgid "edit features"
+msgstr "Merkmale bearbeiten"
+
+#: gtkmorph/settings.c:94
+msgid "permits to add and delete mesh lines, edit features"
+msgstr ""
+"erlaubt es Kontrollpolygonnetzlinien hinzuzufügen, zu löschen und Merkmale "
+"zu bearbeiten"
+
+#: gtkmorph/settings.c:98
+msgid "preserve border"
+msgstr "Rand erhalten"
+
+#: gtkmorph/settings.c:101
+msgid "border points of the mesh are forced to stay on the border of the image"
+msgstr "Randpunkte des Kontrollpolygonnetzes müssen am Rand des Bildes bleiben"
+
+#: gtkmorph/settings.c:105
+msgid "hide unusable"
+msgstr "unbrauchbare verstecken"
+
+#: gtkmorph/settings.c:108
+msgid "hide unusable widgets, instead of deactivating them"
+msgstr "unbrauchbare Widgets verstecken anstatt sie zu deaktivieren"
+
+#: gtkmorph/settings.c:112
+msgid "cursor jump"
+msgstr "Cursor-Sprung"
+
+#: gtkmorph/settings.c:115
+msgid "moves the image to recenter the last edited point"
+msgstr ""
+"bewegt das Bild, um den letzten bearbeiteten Punkt wieder zu zentrieren"
+
+#: gtkmorph/settings.c:119
+msgid "mesh cant overlap"
+msgstr "Kontrollpolygonnetz kann nicht überlappen"
+
+#: gtkmorph/settings.c:122
+msgid ""
+"a mesh point cannot enter in a neighbouring cell (this is currently not very "
+"well enforced)"
+msgstr ""
+"ein Kontrollpolygonnetzpunkt kann nicht in einer benachbarten Zelle "
+"eingegeben werden (die ist aktuell nicht sehr gut durchgesetzt)"
+
+#: gtkmorph/settings.c:126
+msgid "use antialiasing warping"
+msgstr "Kantenglättungverzerrung benutzen"
+
+#: gtkmorph/settings.c:129
+msgid ""
+"choose antialiasing method that is used when warping: the lanczos kernels "
+"are slower, but are necessary if the images have fine or grained textures "
+"for animations"
+msgstr ""
+"Kantenglättungsmethode auswählen, die beim Verzerren benutzt wird: Die "
+"Lanczos-Kernel sind langsamer, aber notwendig, wenn das Bild feine oder "
+"gemaserte Texturen für Animationen hat."
+
+#: gtkmorph/settings.c:134
+msgid "wavelet equalization"
+msgstr "Angleichung kleiner Wellen"
+
+#: gtkmorph/settings.c:137
+msgid ""
+"the averaging of images will lose details; you may enable an enhancing "
+"algorithm (based on wavelets)"
+msgstr ""
+"bei der Durchschnittsberechnung der Bilder gehen Details verloren. Sie "
+"könnten einen steigernden Algorithmus (auf Basis kleiner Wellen) einschalten"
+
+#: gtkmorph/settings.c:141
+msgid "wavelet depth"
+msgstr "Tiefe kleiner Wellen"
+
+#: gtkmorph/settings.c:144
+msgid "this is the depth of the wavelets"
+msgstr "dies ist die Tiefe der kleinen Wellen"
+
+#: gtkmorph/settings.c:149
+msgid "energy for mesh smoothing"
+msgstr "Energie für Kontrollpolygonnetzglättung"
+
+#: gtkmorph/settings.c:152
+msgid ""
+"type of energy that is minimized to decide the position of the non-selected "
+"mesh points: thin plate energy is better but slower, to speed up use elastic "
+"energy when editing meshes"
+msgstr ""
+"Typ der Energie, die minimiert ist, um die Position der nicht ausgewählten "
+"Kontrollpolygonnetzpunkte zu entscheiden: Dünne Plattenenergie ist besser, "
+"aber langsamer. Benutzen Sie zum Beschleunigen elastische Energie, wenn "
+"Kontrollpolygonnetze bearbeitet werden"
+
+#: gtkmorph/settings.c:156
+msgid "auto point adjust"
+msgstr "Punkt automatisch anpassen"
+
+#: gtkmorph/settings.c:159
+msgid ""
+"adjust the position of a mesh point by comparing this image with the "
+"previous one and doing a best match. Achieves sub-pixel precision but may "
+"move your point around erratically."
+msgstr ""
+"die Position von einem Kontrollpolygonnetzpunkt durch Vergleichen dieses "
+"Bildes mit dem vorherigen anpassen und das am besten passende tun. Erreicht "
+"Unter-Pixel-Präzision, könnte Ihren Punkt jedoch ziellos umherbewegen."
+
+#: gtkmorph/settings.c:163
+msgid "mesh factors sum to 1"
+msgstr "Kontrollpolygonnetzfaktorensumme auf 1"
+
+#: gtkmorph/settings.c:166
+msgid ""
+"always force the mesh factors so that they sum to 1;\n"
+"(if not, they are internally renormalized before using)"
+msgstr ""
+"immer erzwingen, dass die Kontrollpolygonnetzfaktoren sich auf 1 summieren.\n"
+"(wenn nicht, werden sie intern vor der Benutzung erneut normalisiert)"
+
+#: gtkmorph/settings.c:170
+msgid "image factors sum to 1"
+msgstr "Bildfaktorensumme auf 1"
+
+#: gtkmorph/settings.c:173
+msgid ""
+"always force the image factors so that they sum to 1;\n"
+"(if not, they are internally renormalized before using)"
+msgstr ""
+"immer erzwingen, das die Bildfaktoren sich auf 1 summieren.\n"
+"(wenn nicht, werden sie intern vor der Benutzung erneut normalisiert)"
+
+#: gtkmorph/settings.c:177
+msgid "automatic mesh interpolation"
+msgstr "automatische Kontrollpolygonnetz-Interpolation"
+
+#: gtkmorph/settings.c:180
+msgid ""
+"automatically interpolates the resulting mesh when morphing (note that in "
+"this case you cannot edit it)"
+msgstr ""
+"interpoliert automatisch das resultierende Kontrollpolygonnetz, wenn es "
+"umgewandelt wird (beachten Sie, dass Sie es in diesem Fall nicht bearbeiten "
+"können)"
+
+#: gtkmorph/settings.c:184
+msgid "automatic blending"
+msgstr "automatisches Vermischen"
+
+#: gtkmorph/settings.c:187
+msgid ""
+"automatically blends the images when the image blending factors are changed"
+msgstr ""
+"vermischt automatisch die Bilder, wenn die Bildvermischungsfaktoren geändert "
+"werden"
+
+#: gtkmorph/settings.c:191
+msgid "mesh auto sync"
+msgstr "automatische Kontrollpolygonnetz-Synchronisation"
+
+#: gtkmorph/settings.c:194
+msgid "any change (add/del, label/unlabel) to a mesh is replicated"
+msgstr ""
+"jede Änderung (hinzufügen/löschen, beschriften/Beschriftung entfernen) an "
+"einem Kontrollpolygonnetz wird kopiert."
+
+#: gtkmorph/settings.c:198
+msgid "warped image in other win"
+msgstr "verzerrtes Bild in anderem Fenster"
+
+#: gtkmorph/settings.c:201
+msgid "put warped images in another window"
+msgstr "verzerrtes Bild in ein anderes Fenster verschieben"
+
+#: gtkmorph/settings.c:207
+msgid "show warp after warp"
+msgstr "Verzerrung nach Verzerren anzeigen"
+
+#: gtkmorph/settings.c:210
+msgid ""
+"switch the input window(s) to the warped image after a warp (overridden by "
+"the above)"
+msgstr ""
+"das/die Eingabefenster zu dem verzerrten Bild nach einer Verzerrung "
+"umschalten (überschrieben von dem darüberliegenden)"
+
+#: gtkmorph/settings.c:273
+msgid "preserve aspect ratio"
+msgstr "Seitenverhältnis beibehalten"
+
+#: gtkmorph/settings.c:276
+msgid "when loading an image, preserve aspect ratio"
+msgstr "beim Laden eines Bildes, das Seitenverhältnis beibehalten"
+
+#: gtkmorph/settings.c:280
+msgid "dim image"
+msgstr "Bild abblenden"
+
+#: gtkmorph/settings.c:287
+msgid "view original mesh"
+msgstr "Originalkontrollpolygonnetz ansehen"
+
+#: gtkmorph/settings.c:294
+msgid "view original points"
+msgstr "Originalpunkte ansehen"
+
+#: gtkmorph/settings.c:308
+msgid "view warped mesh"
+msgstr "verzerrtes Kontrollpolygonnetz ansehen"
+
+#: gtkmorph/settings.c:315
+msgid "view warped points"
+msgstr "verzerrte Punkte ansehen"
+
+#: gtkmorph/settings.c:329
+msgid "view eyes"
+msgstr "Augen ansehen"
+
+#: gtkmorph/settings.c:343
+msgid "mesh is readonly"
+msgstr "Kontrollpolygonnetz ist nur zum Lesen geöffnet"
+
+#: gtkmorph/settings.c:383
+msgid "disable"
+msgstr "ausschalten"
+
+#: gtkmorph/settings.c:416
+msgid "show mesh difference to..."
+msgstr "Kontrollpolygonnetzunterschied anzeigen zu ..."
+
+#: gtkmorph/settings.c:418
+msgid "show difference between this mesh and another mesh, as white arrows"
+msgstr ""
+"den Unterschied zwischen diesem Kontrollpolygonnetz und einem anderen "
+"Kontrollpolygonnetz als weiße Pfeile anzeigen"
+
+#: gtkmorph/utils2_c:14
+msgid "resulting image"
+msgstr "Ergebnisbild"
+
+#: gtkmorph/utils2_c:19 gtkmorph/utils.c:350
+msgid "input image"
+msgstr "Eingabebild"
+
+#: gtkmorph/feature.c:201
+msgid "(unavailable feature name)"
+msgstr "(nicht verfügbarer Merkmalname)"
+
+#: gtkmorph/feature.c:366 gtkmorph/feature.c:386
+msgid "feature"
+msgstr "Merkmal"
+
+#: gtkmorph/feature.c:504
+msgid "sorry this functions is as yet unimplemented"
+msgstr ""
+"Entschuldigung. Diese Funktionen ist in der vorliegenden Form noch "
+"nichtimplementiert"
+
+#: gtkmorph/guide_text.c:20
+msgid "-Introduction"
+msgstr "-Einleitung"
+
+#: gtkmorph/guide_text.c:22
+msgid ""
+"     Welcome to GtkMorph\n"
+"\n"
+"GtkMorph is a powerful program that permits you to warp or morph images.\n"
+"\n"
+"   Using this guide.\n"
+"\n"
+"Hit 'next' to skip a topic, or 'do it' to do it; when you have done a topic, "
+"hit 'Guide' in the main window to come back to the guide.\n"
+"(Note that, when you hit 'do it', the guide will iconify and deiconify other "
+"windows to highlight your task: with some dumb window managers, this will "
+"not work ok).\n"
+" If you are not satisfied by the way you have complied with the guide "
+"requests, hit 'prev' and 'do it' to retry the task.\n"
+"As a first task, you may get acquainted with the main gtkmorph window: if "
+"you want to give it a look, hit 'do it': the main window will pop up! Note "
+"that, if you keep the mouse still on a menu voice or on a button for a "
+"moment, a tip shows up. When you are done, hit 'Guide' to come back to the "
+"guide.\n"
+"If you know the program main window, simply hit 'next'.\n"
+"\n"
+"If you are fed up with the guide, you may stop it at any time by closing "
+"this window: the normal gtkmorph program will pop up.\n"
+"\n"
+"If you want to test the program, you may want to load the example session:"
+"look into the 'Help' menu."
+msgstr ""
+"     Willkommen bei GtkMorph\n"
+"\n"
+"GtkMorph ist ein leistungsstarkes Programm, das es Ihnen erlaubt Bilder zu "
+"verzerren oder umzuwandeln.\n"
+"\n"
+"   Benutzung dieser Anleitung\n"
+"\n"
+"Drücken Sie »weiter«, um ein Thema zu überspringen oder »ausführen«, um es "
+"auszuführen. Wenn Sie ein Thema erledigt haben, drücken Sie im Hauptfenster "
+"»Anleitung«, um zurück zur Anleitung zu kommen.\n"
+"(Beachten Sie dass, wenn Sie »ausführen« drücken, diese Anleitung minimiert "
+"und andere Fenster maximiert wird, um Ihre Aufgabe hervorzuheben: Bei "
+"einigen dummen Fenstermanagern funktioniert dies nicht richtig).\n"
+"Wenn Sie mit dem Weg nicht zufrieden sind, den Sie mit der Anleitungsabfrage "
+"eingehalten haben, drücken Sie »vorheriger« und dann »ausführen«, um die "
+"Aufgabe zu wiederholen.\n"
+"Als erste Aufgabe könnten Sie sich mit dem GtkMorph-Hauptfenster vertraut "
+"machen: Wenn Sie ihm ein eigenes Aussehen geben wollen, drücken Sie auf "
+"»ausführen«: Das Hauptfenster erscheint. Beachten Sie dass, wenn Sie die "
+"Maus für einen Moment still über einem Menüpunkt oder einem Knopf halten, "
+"ein Tipp erscheint. Wenn Sie das getan haben, drücken Sie »Anleitung«, um "
+"zurück zur Anleitung zu kommen.\n"
+"Wenn Sie das Programmhauptfenster kennen, drücken sie einfach »weiter«.\n"
+"\n"
+"Wenn Sie von der Anleitung die Nase voll haben, können Sie sie durch "
+"Schließen dieses Fensters stoppen. Das normale GtkMorph-Programm erscheint.\n"
+"\n"
+"Wenn Sie das Programm testen möchten, können Sie die die Beispielsitzung "
+"laden: Sehen Sie in das »Hilfe«-Menü."
+
+#: gtkmorph/guide_text.c:48
+msgid "-Select subimage size"
+msgstr "-Unterbildgröße auswählen"
+
+#: gtkmorph/guide_text.c:50
+msgid ""
+"Now you select the size that the output image(s) will have. To this end, in "
+"the lower part of the main window, there is a pair of spins; select your "
+"preferred size and hit 'apply'.\n"
+"After that, you will be brought back to the guide.\n"
+"You may change the size again by selecting 'resulting size...' in the Edit "
+"menu."
+msgstr ""
+"Nun wählen Sie die Größe, die das/die Ausgabebild(er) haben soll(en). An "
+"diesem Ende im unteren Teil des Hauptfensters ist ein Paar von Drehknöpfen. "
+"Wählen Sie Ihre bevorzugte Größe und drücken Sie »bestätigen«.\n"
+"Danach werden Sie zu dieser Anleitung zurückgeleitet.\n"
+"Sie können die Größe wieder ändern, indem Sie im Menü Bearbeiten "
+"»resultierende Größe ...« auswählen."
+
+#: gtkmorph/guide_text.c:57
+msgid "-Morph or warp"
+msgstr "-Umwandeln oder verzerren"
+
+#: gtkmorph/guide_text.c:59
+msgid ""
+"You may `warp' or `morph'.\n"
+"\n"
+"'Warp' means 'to deform, contort, distort, wring, bend, or otherwise "
+"twist'.\n"
+"If you have one single input image and you want to make a distortion of it, "
+"then you want to warp it. In this case, hit 'next'\n"
+"\n"
+"'Morphing' images instead means 'blending together warped versions of the "
+"images'. So to morph you need two or more input images.\n"
+"In this case, press 'do it', and, in the File menu, choose 'add image' as "
+"many times as to reach the required number of input images, then hit 'Guide' "
+"in the main window.\n"
+"\n"
+"Note that at startup the program is set for ``warping'': there is only one "
+"input image."
+msgstr ""
+"Sie können »verzerren« oder »umwandeln«.\n"
+"\n"
+"»Verzerren« bedeutet »verformen, krümmen. entstellen, auspressen, biegen "
+"oder auf andere Art verdrehen«.\n"
+"Wenn Sie nur ein einzelnes Eingabebild haben und eine Deformation davon "
+"erstellen wollen, möchten Sie es verzerren. In diesem Fall drücken Sie "
+"»weiter«.\n"
+"\n"
+"Bilder »umwandeln« heißt stattdessen, verzerrte Versionen der Bilder "
+"zusammenzumischen. Deshalb benötigen Sie zum Umwandeln zwei oder mehr "
+"Bilder.\n"
+"In diesem Fall drücken Sie »ausführen« und im Datei-Menü wählen Sie so lange "
+"»Bild hinzufügen« bis Sie die erforderliche Anzahl Bilder erreicht haben, "
+"dann drücken Sie »Anleitung« im Hauptfenster.\n"
+"\n"
+"Beachten Sie, dass das Programm am Anfang auf »verzerren« eingestellt ist: "
+"Es gibt dort nur ein Eingabebild."
+
+#: gtkmorph/guide_text.c:74
+msgid "-Load image(s)"
+msgstr "-Bild(er) laden"
+
+#: gtkmorph/guide_text.c:76
+msgid ""
+"Now you need to load the input images.\n"
+"In each input image window, load the input image using the big 'load image' "
+"button."
+msgstr ""
+"Sie müssen die Eingabebilder laden.\n"
+"In jedem Eingabefenster benutzen Sie den großen »Bild laden«-Knopf, um das "
+"Bild zu laden."
+
+#: gtkmorph/guide_text.c:80
+msgid ";Load reference image"
+msgstr "; Bezugsbild laden"
+
+#: gtkmorph/guide_text.c:82
+msgid ""
+"If you wish, you may load an image in the main window; it may help you if "
+"you are warping images and you want to have a reference to use as a target. "
+"This is not really necessary, and you may do as well without.\n"
+"\n"
+"If in this reference image there are 3 important features, like the eyes and "
+"mouth in face, then you should drag the 3 white points on these features.\n"
+"\n"
+"Similarly, if you have a reference mesh that is associated to this image, "
+"you may load it now, using the 'load mesh' button\n"
+"\n"
+"When done, click 'Guide'."
+msgstr ""
+"Wenn Sie möchten, können Sie ein Bild in das Hauptfenster laden. Es könnte "
+"Ihnen helfen, wenn Sie Bilder verzerren und Sie einen Bezug haben möchten "
+"den Sie als Ziel benutzen. Dies ist nicht wirklich notwendig und Sie können "
+"es auch ohne dies tun.\n"
+"\n"
+"Wenn in diesem Bezugsbild drei wichtige Merkmale sind, wie Augen und Mund in "
+"einem Gesicht, dann können Sie die drei weißen Punkte auf diese Merkmale "
+"ziehen.\n"
+"\n"
+"Wenn Sie gleichermaßen ein Bezugskontrollpolygonnetz haben, das mit diesem "
+"Bild verbunden ist, können Sie es nun laden, indem Sie »Kontrollpolygonnetz "
+"laden« drücken.\n"
+"\n"
+"Wenn dies erledigt ist, drücken Sie »Anleitung«."
+
+#: gtkmorph/guide_text.c:92
+msgid "-Select subimage(s)"
+msgstr ".Unterbild(er) auswählen"
+
+#: gtkmorph/guide_text.c:94
+msgid ""
+"Now you select a subimage of each input image. You do this by either moving "
+"the selection rectangle (using the spins at bottom of the window) or by "
+"dragging the 3 white feature points. (see [1] below)\n"
+"\n"
+"When you have chosen the preferred subimage, hit 'apply' (and the window "
+"will close). If later you find out that are not satisfied of your choice, "
+"you may click in the option menu (at center top) and select 'choose "
+"subimage' to repeat this process.\n"
+"\n"
+"Alternatively, if you have already a mesh for this image, you may load it "
+"now; since the subimage selection is saved with the mesh; when you load the "
+"saved mesh, the subimage is reselected for you.\n"
+"\n"
+" [1] Note that you cannot position the 3 points freely: their mutual "
+"position is copied from the position of the 3 reference points in the "
+"resulting image; so you will need to be patient.\n"
+"Note also that the selection rectangle has currently a fixed aspect (see "
+"[2]); if you want to freely change the aspect, change the 'preserve aspect "
+"ratio' setting in the 'settings'.\n"
+" [2] 'aspect' is the ratio between width and height."
+msgstr ""
+"Nun können Sie ein Unterbild zu jedem Bild auswählen. Sie tun dies entweder "
+"durch Bewegen des Rechtecks (benutzen Sie die Drehknöpfe unten im Fenster) "
+"oder durch Ziehen der drei weißen Punkte (siehe [1] unten).\n"
+"\n"
+"Wenn Sie das bevorzugte Unterbild ausgewählt haben, drücken Sie "
+"»bestätigen« (und das Fenster wird geschlossen). Wenn Sie später "
+"feststellen, dass Sie mit Ihrer Auswahl unzufrieden sind, können Sie in das "
+"Optionen-Menü klicken (oben in der Mitte) und »Unterbild auswählen« "
+"anklicken, um diesen Prozess zu wiederholen.\n"
+"Ersatzweise könnten Sie, wenn Sie bereits ein Kontrollpolygonnetz für dieses "
+"Bild haben, es nun laden. Wenn Sie das gespeicherte Kontrollpolygonnetz "
+"laden, wird das Unterbild für Sie wieder ausgewählt.\n"
+"\n"
+" [1] Beachten Sie, dass Sie die drei Punkt nicht frei setzen können: Ihre "
+"Position zueinander wird von der Position der drei Bezugspunkte im "
+"Ergebnisbild kopiert. Seien Sie geduldig.\n"
+"Beachten Sie außerdem, dass das Auswahlrechteck derzeit einen festen "
+"Standpunkt hat (siehe [2]). Wenn Sie diesen Standpunkt frei ändern wollen, "
+"ändern Sie die »Standpunktverhältnis beibehalten«-Einstellung in den "
+"»Einstellungen«.\n"
+" [2] »Standpunkt« ist das Verhältnis zwischen Breite und Höhe."
+
+#: gtkmorph/guide_text.c:117
+msgid "-Adjust mesh"
+msgstr "-Kontrollpolygonnetz anpassen"
+
+#: gtkmorph/guide_text.c:119
+msgid ""
+"Now you adjust the mesh in the input image(s) so that they best fit to the "
+"features of those images. If you hit the right mouse key while on the mesh, "
+"you will get a menu.\n"
+"It is very important that points in different meshes are syncronized, that "
+"is, that point (i,j) in every mesh is associated to the same type of "
+"feature; for this reason, when you drag a point in a mesh, the same point "
+"flashes in all other meshes.\n"
+"When you have put points on a feature (say, for example, the right eye), you "
+"may hit 'pack' to pack all this point into a 'feature'."
+msgstr ""
+"Nun passen Sie das Kontrollpolygonnetz im (in den) Eingabebild(ern) an, so "
+"dass es am besten zu dem Merkmalen dieser Bilder passt. Wenn Sie die rechte "
+"Maustaste drücken, während Sie sich auf dem Kontrollpolygonnetz befinden, "
+"öffnet sich ein Menü.\n"
+"Es ist sehr wichtig, dass Punkte in unterschiedlichen Kontrollpolygonnetzen "
+"synchronisiert werden, weil dieser Punkt (i,j) in jedem Kontrollpolygonnetz "
+"mit dem gleichen Merkmalstyp verbunden ist. Aus diesem Grund leuchtet der "
+"gleiche Punkt  in allen anderen Kontrollpolygonnetzen auf, wenn Sie ihn in "
+"ein Kontrollpolygonnetz ziehen.\n"
+"Wenn Sie Punkte auf ein Merkmal (nehmen wir zum Beispiel das rechte Auge) "
+"gelegt haben, können Sie »packen« drücken, um all diese Punkte in ein "
+"»Merkmal« zu packen."
+
+#: gtkmorph/guide_text.c:130
+msgid "From time to time, you better save the mesh(es)."
+msgstr "Von Zeit zu Zeit speichern Sie den/das Kontrollpolygonnetz(e) besser."
+
+#: gtkmorph/guide_text.c:132
+msgid ";Warp"
+msgstr ";Verzerrung"
+
+#: gtkmorph/guide_text.c:134
+msgid ""
+"Hit the 'do warp' button to view the warp. If you are not satisfied, choose "
+"'edit mesh' in the option menu (top center) and edit the mesh further.From "
+"time to time, you better save the mesh."
+msgstr ""
+"Drücken Sie den »verzerren«-Knopf, um die Verzerrung anzusehen. Wenn Sie "
+"nicht zufrieden sind, wählen Sie »Kontrollpolygonnetz bearbeiten« im Menü "
+"Option (oben in der Mitte) und bearbeiten Sie das Kontrollpolygonnetz "
+"weiter. Von Zeit zu Zeit speichern Sie das Kontrollpolygonnetz besser."
+
+#: gtkmorph/guide_text.c:139
+msgid ":Morph"
+msgstr ":Umwandeln"
+
+#: gtkmorph/guide_text.c:140
+msgid ""
+"To morph your images, you must decide how much each image should influence "
+"the resulting morph. To this end, you adjust the morph factors to your need; "
+"the 'mesh interpolation' slide tells how much this mesh will influence the "
+"resulting mesh, and the 'image blending' tells how much this image is "
+"visible in the resulting image.\n"
+"\n"
+"Then hit the 'do morph' button in the main window to view the morph.\n"
+" If you are not satisfied, choose 'edit mesh' in the option menu (top "
+"center) and edit the mesh further; or, choose 'view warp&mesh' and edit the "
+"morph factors.\n"
+"\n"
+"If you want to change the morph factors further, choose ``morph factors..'' "
+"in the 'edit' menu\n"
+"\n"
+"Tip: set all factors to equal values and do a morph: if the images do not "
+"superimpose well, you may try to select a subimage in each image so that "
+"they superimpose better"
+msgstr ""
+"Um Ihre Bilder umzuwandeln müssen Sie entscheiden, wie viel jedes Bild das "
+"Umwandlungsergebnis beeinflussen soll. Dazu passen Sie die "
+"Umwandlungsfaktoren an Ihre Bedürfnisse an. Der »Kontrollpolygonnetz-"
+"Interpolation«-Schieber gibt an, wie viel jedes Kontrollpolygonnetz das "
+"resultierende Umwandlungsergebnis beeinflussen soll und die "
+"»Bildvermischung« gibt an, wie stark das Bild im Ergebnisbild sichtbar ist.\n"
+"\n"
+"Dann drücken Sie den »umwandeln«-Knopf im Hauptfenster und sehen sich die "
+"Umwandlung an. Wenn Sie nicht zufrieden sind, wählen Sie "
+"»Kontrollpolygonnetz bearbeiten« im Menü Option (oben in der Mitte) und "
+"bearbeiten Sie das Kontrollpolygonnetz weiter oder wählen Sie »Umwandlung & "
+"Kontrollpolygonnetz ansehen« und bearbeiten Sie die Umwandlungsfaktoren.\n"
+"\n"
+"Wenn Sie die Umwandlungsfaktoren weiter bearbeiten möchten, wählen Sie "
+"»Umwandlungsfaktoren« im Menü »Bearbeiten«.\n"
+"\n"
+"Tipp: Setzen Sie alle Faktoren auf die gleichen Werte und machen Sie eine "
+"Umwandlung. Wenn die Bilder nicht gut eingeblendet werden, können Sie "
+"versuchen in jedem Bild ein Unterbild auszuwählen, so dass Sie besser "
+"eingeblendet werden."
+
+#: gtkmorph/guide_text.c:157
+msgid ":Movie"
+msgstr ":Film"
+
+#: gtkmorph/guide_text.c:158
+msgid ""
+"To make a movie of your morph, choose 'morph sequence' in the Morph menu. A "
+"window will pop up. Click on help there for further help."
+msgstr ""
+"Um einen Film von Ihrer Umwandlung zu erstellen, wählen Sie "
+"»Umwandlungsabfolge« im Menü Umwandlung. Es öffnet sich eine Fenster. "
+"Klicken Sie dort auf Hilfe, um weitere Hilfe zu erhalten."
+
+#: gtkmorph/guide_text.c:161
+msgid "-End"
+msgstr "-Ende"
+
+#: gtkmorph/guide_text.c:162
+msgid ""
+"Here ends the guide.\n"
+"\n"
+"Goodbye and thank you"
+msgstr ""
+"Hier endet die Anleitung.\n"
+"\n"
+"Auf Wiedersehen und vielen Dank"
+
+#: gtkmorph/movies.c:64 gtkmorph/callbacks_main.c:318
+msgid "to morph, you must have at least two input images"
+msgstr "Zum Umwandeln benötigen Sie mindestens zwei Bilder"
+
+#: gtkmorph/movies.c:526
+#, c-format
+msgid ""
+"Help on movie making: when you hit ok, gtkmorph will repeat a loop for %d "
+"times. Any time, it will set the warping and image-blending factors to an "
+"interpolation between the values that you have stored as 'first' and 'end'. "
+"Any time, it will save the morphed image (in format %s), starting from '%s' "
+"and ending with '%s'. Then it will create any animation that you have asked "
+"to create: the animated gif is called '%s.gif', the mpeg file is called '%s."
+"mpeg' (and mpeg_encode will use '%s.param' for parameters if available: see "
+"in %s/mpeg.param an example, or copy the end part of %s.auto.param) and play "
+"them. You may recreate animations from preexisting frames by hitting 'replay'"
+msgstr ""
+"Hilfe bei der Filmerstellung: Wenn Sie Ok drücken, wird GtkMorph %d\n"
+"mal eine Schleife wiederholen. Jedesmal wird es die Verzerrungs- und\n"
+"Bildvermischungsfaktoren auf eine Interpolation zwischen den Werten\n"
+"setzen, die Sie als »Anfang« und »Ende« gespeichert haben. Jedesmal\n"
+"wird das umgewandelte Bild (im Format %s) beginnend bei %s und endend\n"
+"mit %s gespeichert. Dann wird es jede Bewegung, die Sie zur Erstellung\n"
+"vorgesehen haben, erstellen: Das bewegte GIF heißt »%s.gif«, die\n"
+"MPEG-Datei heißt »%s.mpeg« (und mpeg_encode wird für die Parameter\n"
+"»%s.param« benutzen, falls verfügbar;  siehe\n"
+"in %s/mpeg.param Beispiel, oder kopieren Sie den Endteil %s.auto.param)\n"
+"und sie abspielen. Sie können die Bewegungen aus bestehenden\n"
+"Einzelbildern neu erstellen, indem Sie »wieder abspielen« drücken."
+
+#: gtkmorph/movies.c:599
+msgid ""
+"Sorry : temporary files can only be saved as png, and not as ppm; but "
+"'mencoder' does not read ppm files. You must compile gtkmorph using a newer "
+"version of libGTK."
+msgstr ""
+"Entschuldigung: Temporäre Dateien können nur als PNG gespeichert werden und "
+"nicht als PPM. Aber »mencode« kann keine PPM-Dateien lesen. Sie müssen "
+"GtkMorph unter Benutzung einer neueren Version von libGTK neu kompilieren."
+
+#: gtkmorph/movies.c:602
+msgid ""
+"sorry : cannot create AVI if a comma ',' is in the filename (blame this on "
+"'mencoder')"
+msgstr ""
+"Entschuldigung: AVI kann nicht erzeugt werden, wenn der Dateiname ein Komma "
+"»,« enthält (»mencoder« ist schuld)."
+
+#: gtkmorph/callbacks_help.c:18
+msgid ""
+"Here are a few tips at using this program\n"
+"0) at startup the program is set for ``warping'': read the ``warp help''\n"
+"1) to morph, you need to have 2 or more `input images' :\n"
+" use `add an image' (it is in the `file' menu); read the ``morph help''\n"
+"2) if you keep the mouse still on a menu voice or on a button\n"
+"  for a moment, you may read the help tips.\n"
+"3) when the mouse pointer is in on the mesh grid, by hitting\n"
+"  the right button, you get an useful menu.\n"
+"\n"
+"\n"
+"If you need more help, activate the guide."
+msgstr ""
+"Hier ein paar Tipps zur Benutzung dieses Programms\n"
+"0) beim Programmstart ist »verzerren« eingestellt: Lesen Sie die \n"
+" »verzerren-Hilfe«\n"
+"1) zum Umwandeln benötigen sie zwei oder mehr »Eingabebilder«:\n"
+" Benutzen Sie »ein Bild hinzufügen« (es ist im Menü »Datei«). Lesen Sie\n"
+" die »Umwandeln-Hilfe«\n"
+"2) wenn Sie die Maus für einen Moment still über einem Menüpunkt oder\n"
+"einem Knopf halten, können Sie die Hilfetipps lesen.\n"
+"3) wenn der Mauszeiger sich über dem Kontrollpolygonnetz befindet,\n"
+" erhalten Sie durch Drücken der rechten Taste ein nützliches Menü.\n"
+"\n"
+"\n"
+"Wenn Sie weitere Hilfe benötigen, aktivieren Sie die Anleitung."
+
+#: gtkmorph/callbacks_help.c:38
+msgid ""
+"To morph:\n"
+"  1) load an image in each `input image',\n"
+"  2) edit the meshes by dragging the points (and use the menu that you get\n"
+"       by the right mouse button)\n"
+"  3) set the `blending factors' and `mesh factors' as desired\n"
+"  4) and hit `do morph'\n"
+msgstr ""
+"Zum Umwandeln:\n"
+"  1) ein Bild in jedes »Eingabebild« laden,\n"
+"  2) die Kontrollpolygonnetze durch ziehen der Punkte bearbeiten (und\n"
+"       das Menü benutzen, das Sie durch Drücken der rechten Maustaste\n"
+"       erhalten)\n"
+"  3) die »Vermischungsfaktoren« und »Kontrollpolygonnetzfaktoren wie\n"
+"       gewünscht setzen\n"
+"  4) und »umwandeln« drücken\n"
+
+#: gtkmorph/callbacks_help.c:72
+msgid ""
+"It is not difficult to use this program for warping: just\n"
+"  1) load an image in the `input image 1',\n"
+"  2) edit the meshes by dragging the points (and use the menu that you get\n"
+"       by the right mouse button)\n"
+"  3) and hit `do warp'\n"
+msgstr ""
+"Es ist nicht schwierig dieses Programm zum Verzerren zu benutzen: Sie \n"
+"müssen nur\n"
+"  1) ein Bild in »Eingabebild 1« laden,\n"
+"  2) die Kontrollpolygonnetze durch Ziehen der Punkte bearbeiten (und\n"
+"       das Menü benutzen, das Sie durch Drücken der rechten Maustaste\n"
+"       erhalten)\n"
+"  3) und »verzerren« drücken\n"
+
+#: gtkmorph/utils-mesh.c:43
+msgid "to interpolate meshes, you must have at least two input images"
+msgstr ""
+"Um Kontrollpolygonnetze zu interpolieren, müssen Sie mindestens zwei "
+"Eingabebilder haben"
+
+#: gtkmorph/utils-mesh.c:56
+msgid ""
+"to interpolate the meshes, the sum of the all `mesh factors' should be "
+"nonzero\n"
+"I have set some default values for you"
+msgstr ""
+"Um die Kontrollpolygonnetze zu interpolieren, darf die Summe aller "
+"Kontrollpolygonnetzfaktoren nicht Null sein\n"
+"Einige Vorgabewerte sind bereits eingestellt"
+
+#: gtkmorph/callbacks_fs.c:168
+#, c-format
+msgid "load %s"
+msgstr "%s laden"
+
+#: gtkmorph/callbacks_fs.c:317 gtkmorph/loadsave.c:449
+msgid "internal error: the image doesnt exist!"
+msgstr "interner Fehler: Das Bild existiert nicht!"
+
+#: gtkmorph/callbacks_fs.c:324
+#, c-format
+msgid "save %s (only PPM format)"
+msgstr "%s speichern (nur PPM-Format)"
+
+#: gtkmorph/callbacks_fs.c:326
+#, c-format
+msgid "save %s"
+msgstr "%s speichern"
+
+#: gtkmorph/utils.c:348
+msgid "template image"
+msgstr "Schablonenbild"
+
+#: gtkmorph/utils.c:356
+msgid "morphed image"
+msgstr "umgewandeltes Bild"
+
+#: gtkmorph/guide_text.h:7
+msgid ""
+"'Features' are sets of grid points; they are represented by the same color "
+"in the grid. They can be used to more easily edit a complex grid: for "
+"example, when preparing a grid on a face, each facial feature (eyes, "
+"mouth..) can be outlined by using a proper set of points.\n"
+"Points can be added or subtracted from features using the tools 'assign' and "
+"'unselect'; whole features can be moved all together, using the 'move' and "
+"'stretch' tools; the 'pack' button transforms all selected points into a "
+"feature, and 'unpack' does the opposite."
+msgstr ""
+"»Merkmale« sind Zusammenstellungen von Gitterpunkten. Sie werden im Gitter "
+"in der gleichen Farbe dargestellt. Sie können benutzt werden, um ein "
+"komplexes Gitter einfacher zu ändern: Wenn Sie zum Beispiel ein Gitter über "
+"ein Gesicht legen, kann jedes Gesichtsmerkmal (Augen, Mund ...) durch "
+"Benutzung einer ordentlichen Zusammenstellung von Punkten umrissen werden.\n"
+"Punkte können durch die Benutzung der Werkzeuge »zuweisen« und »Auswahl "
+"aufheben« zu Merkmalen hinzugefügt oder von ihnen entfernt werden. Ganze "
+"Merkmale können mit den Werkzeugen »bewegen« und »strecken« gemeinsam bewegt "
+"werden. Der »packen«-Knopf wandelt die ausgewählten Punkte in ein Merkmal um "
+"und »entpacken« tut das Gegenteil."
+
+#: gtkmorph/guide_text.h:18
+msgid ""
+"Tips:\n"
+"1) try to keep the mesh lines as linear as possible: add new lines (with "
+"right mouse button) if this helps!\n"
+"2) to have a better morph, for each image, set the `morph factors' to a "
+"maximum, hit `do warp' and try to adjust the mesh until this warp looks "
+"right\n"
+"3) if you are fighting with small details, then you should increase the "
+"resulting image size until you have fixed things. (Use the the 'x2' button.)"
+msgstr ""
+"Tipps:\n"
+"1) versuchen Sie, die Kontrollpolygonnetzlinien so linear wie möglich zu "
+"halten: Fügen Sie neue Linien (mit der rechten Maustaste) hinzu, wenn das "
+"hilft.\n"
+"2) um eine bessere Umwandlung für jedes Bild zu erhalten, setzen Sie die "
+"»Umwandlungsfaktoren« zu einem Maximum, drücken Sie »umwandeln« und "
+"versuchen Sie das Kontrollpolygonnetz so lange anzupassen, bis die "
+"Verzerrung gut aussieht.\n"
+"3) wenn Sie mit kleinen Details kämpfen, können Sie das Ergebnisbild "
+"vergrößern, bis Sie diese Dinge behoben haben. (Benutzen Sie den »x2«-Knopf.)"
+
+#: gtkmorph/loadsave_mesh.c:81
+#, c-format
+msgid "this filename is already used by the mesh of image %d"
+msgstr ""
+"dieser Dateiname wird bereits von vom Kontrollpolygonnetz des Bildes %d "
+"benutzt"
+
+#: gtkmorph/loadsave_mesh.c:108 gtkmorph/loadsave_mesh.c:362
+msgid ""
+"the attempt to load mesh from file has produced an error\n"
+"(either this is not a mesh file, or the mesh file is corrupted)"
+msgstr ""
+"der Versuch ein Kontrollpolygonnetz aus der Datei zu laden hat einen Fehler "
+"erzeugt\n"
+"(entweder ist dies keine Kontrollpolygonnetzdatei oder die "
+"Kontrollpolygonnetzdatei ist kaputt)"
+
+#: gtkmorph/loadsave_mesh.c:195
+#, c-format
+msgid "this mesh was created on image '%s' and not on this image '%s'"
+msgstr ""
+"dieses Kontrollpolygonnetz wurde auf dem Bild »%s« erstellt und nicht auf "
+"diesem Bild »%s«"
+
+#: gtkmorph/loadsave_mesh.c:217
+#, c-format
+msgid ""
+"the size of the image w=%d h=%d and the size recorded in the mesh  w=%d h="
+"%d  do not match"
+msgstr ""
+"die Größe des Bildes B=%d H=%d und die im Kontrollpolygonnetz aufgezeichnete "
+"Größe B=%d H=%d stimmen nicht überein"
+
+#: gtkmorph/loadsave_mesh.c:252
+msgid ""
+"This mesh is automatically generated. You don't want to overwrite another "
+"mesh with this one!"
+msgstr ""
+"Diese Kontrollpolygonnetz wurde automatisch erzeugt. Überschreiben Sie kein "
+"anderes Kontrollpolygonnetz mit diesem!"
+
+#: gtkmorph/loadsave_mesh.c:403
+#, c-format
+msgid "the attempt to load the image file %s has produced error: %s"
+msgstr "der Versuch die Bilddatei %s zu laden hat einen Fehler erzeugt: %s"
+
+#: gtkmorph/loadsave_mesh.c:477
+msgid ""
+"gtkmorph could not find libply, so it cannot load PLY surfaces. Read "
+"documentations to install libply."
+msgstr ""
+"GtkMorph konnte libply nicht finden, deshalb kann es keine PLY-Oberflächen "
+"laden. Lesen Sie die Dokumentationen, um libply zu installieren."
+
+#: gtkmorph/loadsave_mesh.c:481
+msgid "error while loading PLY file"
+msgstr "Fehler beim Laden der PLY-Datei"
+
+#: gtkmorph/loadsave_mesh.c:486
+msgid "gtkmorph was NOT compiled with PLY support"
+msgstr "GtkMorph wurde nicht mit PLY-Unterstützung kompiliert"
+
+#: gtkmorph/loadsave_mesh.c:503
+msgid ""
+"This file already exists! If you really want to overwrite it, delete it."
+msgstr ""
+"Diese Datei existiert bereits. Wenn Sie sie wirklich überschreiben wollen, "
+"löschen Sie sie."
+
+#: gtkmorph/loadsave_mesh.c:531
+#, c-format
+msgid "can't resize %dth image-no filename"
+msgstr "Größe des %dsten Bildes kann nicht geändert werden - kein Dateiname"
+
+#: gtkmorph/loadsave_mesh.c:546
+#, c-format
+msgid ""
+"the attempt to reload the image file %s to resize it has produced error: %s"
+msgstr ""
+"der Versuch, die Bilddatei %s erneut zu Laden, um die Größe zu ändern, hat "
+"einen Fehler erzeugt: %s"
+
+#: gtkmorph/dialogs.c:65
+msgid "info"
+msgstr "Informationen"
+
+#: gtkmorph/unused.c:166
+#, c-format
+msgid ""
+"The image %d has an %ld by %ld mesh while the resulting mesh is %d by %d!\n"
+"I cant warp it!\n"
+"I suggest that you add lines so that both meshes are %d by %d"
+msgstr ""
+"Das Bild %d hat ein %ld mal %ld Kontrollpolygonnetz, während das "
+"Ergebniskontrollpolygonnetz %d mal %d ist.\n"
+"Es kann nicht verzerrt werden.\n"
+"Es wird vorgeschlagen, dass Sie Linien hinzufügen, so dass beide "
+"Kontrollpolygonnetze %d mal %d sind."
+
+#: gtkmorph/loadsave.c:76
+msgid "please provide a filename"
+msgstr "bitte geben Sie einen Dateinamen an"
+
+#: gtkmorph/loadsave.c:103
+#, c-format
+msgid "could not open file '%s' for write: %s"
+msgstr "Datei »%s« kann nicht zum Schreiben geöffnet werden: %s"
+
+#: gtkmorph/loadsave.c:229
+msgid "can't reload the full session-no more available images"
+msgstr ""
+"die ganze Sitzung kann nicht erneut geladen werden - nicht mehr verfügbare "
+"Bilder"
+
+#: gtkmorph/loadsave.c:286
+#, c-format
+msgid "could not open file '%s' for read: %s"
+msgstr "Datei »%s« kann nicht zum Lesen geöffnet werden: %s"
+
+#: gtkmorph/loadsave.c:301
+msgid "parsing of session failed at first header!"
+msgstr "Auswerten der Sitzung bei der ersten Kopfzeile fehlgeschlagen"
+
+#: gtkmorph/loadsave.c:336
+msgid "parsing of session failed"
+msgstr "Auswerten der Sitzung fehlgeschlagen"
+
+#: gtkmorph/loadsave.c:356 gtkmorph/loadsave.c:379 gtkmorph/loadsave.c:401
+#, c-format
+msgid "the attempt to save the image file %s has produced error: %s"
+msgstr ""
+"der Versuch, die Bilddatei %s zu speichern hat einen Fehler erzeugt: %s"
+
+#: gtkmorph/loadsave.c:407
+#, c-format
+msgid "the attempt to close the saved image file %s has produced error: %s"
+msgstr ""
+"der Versuch die gespeicherte Bilddatei %s zu laden erzeugte einen Fehler: %s"
+
+#: gtkmorph/loadsave.c:457
+msgid ""
+" this version of gtkmorph can save images only in .ppm format (to save in "
+"other formats, compile with GTK2 or higher). Please set the filename "
+"extension to '.ppm'"
+msgstr ""
+" diese Version von GtkMorph kann Bilder nur im .PPM-Format speichern (um sie "
+"in anderen Formaten zu speichern, kompilieren Sie es mit GTK2 oder höher). "
+"Bitte setzen Sie die Dateiendung auf ».ppm«"
+
+#: gtkmorph/loadsave.c:479
+msgid "please use an allowed image format"
+msgstr "bitte benutzen Sie ein erlaubtes Bildformat"
+
+#: gtkmorph/loadsave.c:499
+#, c-format
+msgid ""
+"the filename extension is '%s' but the image was saved in format '%s'. This "
+"mismatch may prevent you from viewing this image."
+msgstr ""
+"diese Dateinamenerweiterung ist »%s«, aber das Bild wurde im Format »%s« "
+"gespeichert. Diese fehlende Übereinstimmung könnte verhindern, dass Sie "
+"dieses Bild ansehen können."
+
+#: gtkmorph/callbacks_edit.c:88 gtkmorph/callbacks_edit.c:153
+msgid ""
+"you cant edit this mesh - it is automatically generated as an interpolation\n"
+"of the input images meshes .\n"
+"(but if you really want to edit, unset 'automatic mesh interpolation')"
+msgstr ""
+"Sie können dieses Kontrollpolygonnetz bearbeiten - es wurde automatisch als "
+"eine Interpolation des Eingabebildkontrollpolygonnetzes erzeugt.\n"
+"(wenn Sie es aber wirklich bearbeiten wollen, schalten Sie die »automatische "
+"Kontrollpolygonnetzinterpolation« aus)"
+
+#: gtkmorph/callbacks_edit.c:96 gtkmorph/callbacks_edit.c:161
+msgid ""
+"You are currently viewing the warped version of the image\n"
+"you may not edit this mesh (which refers to the loaded image).\n"
+"To edit the mesh, select `edit mesh' in the menu (at top center).\n"
+"I have done it now for you"
+msgstr ""
+"Sie sehen aktuell die verzerrte Version des Bildes, Sie können dieses\n"
+"Kontrollpolygonnetz nicht bearbeiten (das sich auf das geladene Bild\n"
+"bezieht).\n"
+"Um dieses Kontrollpolygonnetz zu bearbeiten, wählen Sie im Menü\n"
+"»Kontrollpolygonnetz bearbeiten« (oben in der Mitte).\n"
+"Es wurde bereits für Sie getan."
+
+#: gtkmorph/callbacks_main.c:109
+#, c-format
+msgid "the mesh(es) %s were not saved! do you want to exit anyway?"
+msgstr ""
+"Das/Die »Kontrollpolygonnetz(e)« %s wurden nicht gespeichert. Möchten Sie "
+"dennoch beenden?"
+
+#: gtkmorph/callbacks_main.c:282
+msgid ""
+"to blend the images, the sum of the all `image mixing factors' must be "
+"nonzero\n"
+"I have put default values for you"
+msgstr ""
+"um Bilder zu vermischen, muss die Summe aller »Bildvermischungsfaktoren« "
+"ungleich Null sein.\n"
+"Es wurden Vorgabewerte für Sie eingestellt."
+
+#: gtkmorph/callbacks_main.c:476
+msgid "gtkmorph was not linked with Waili wavelet library"
+msgstr "GtkMorph wurde nicht mit der »Waili wavelet«-Bibliothek verknüpft"
+
+#: gtkmorph/callbacks_main.c:589
+msgid "the input images have different numbers of channels: cannot blend"
+msgstr ""
+"die Eingabebilder haben unterschiedlich viele Kanäle: Sie können nicht "
+"gemischt werden"
+
+#: gtkmorph/callbacks_main.c:838
+msgid ""
+"Loading the example session may ruin your current session. Please properly "
+"save all meshes and retry."
+msgstr ""
+"Die Beispielsitzung zu Laden kann Ihre aktuelle Sitzung ruinieren. Bitte "
+"speichern Sie alle Kontrollpolygonnetze ordentlich ab und versuchen Sie es "
+"erneut."
+
+#: gtkmorph/callbacks_main.c:869
+#, c-format
+msgid ""
+"The 'example' directory should be in '%s' but is not.\n"
+"Install the 'gtkmorph-example' debian package."
+msgstr ""
+"Das »Beispiel«-Verzeichnis sollte in »%s« sein, ist jedoch nicht dort.\n"
+"Installieren Sie das Debian-Paket gtkmorph-example."
+
+#: gtkmorph/callbacks_main.c:872
+#, c-format
+msgid "The 'example' directory should be in '%s' but is not."
+msgstr "Das »Beispiel«-Verzeichnis sollte in »%s« sein, ist jedoch nicht dort."
+
+#: gtkmorph/gtk_subimagesel.c:407
+msgid "you must load an image before you may choose a subimage"
+msgstr "Sie müssen ein Bild laden, bevor Sie ein Unterbild auswählen können"
+
+#: gtkmorph/callbacks_fs_mesh.c:70
+#, c-format
+msgid "load mesh for %s"
+msgstr "Kontrollpolygonnetz für %s laden"
+
+#: gtkmorph/callbacks_fs_mesh.c:105
+#, c-format
+msgid "save mesh for %s"
+msgstr "Kontrollpolygonnetz für %s speichern"
+
+#: gtkmorph/callbacks_fs_mesh.c:136 gtkmorph/callbacks_fs_mesh.c:163
+msgid "save difference to mesh"
+msgstr "Unterschiede in Kontrollpolygonnetz speichern"
+
+#: gtkmorph/callbacks_fs_mesh.c:186
+msgid "load difference mesh"
+msgstr "Kontrollpolygonnetz mit Unterschieden laden"
+
+#: glade1/support.c:130
+#, c-format
+msgid "Error loading pixmap file: %s"
+msgstr "Fehler beim Laden der pixmap-Datei: %s"
+
+#: glade1/interface.c:167 po/gtkmorph.glade.c:8
+msgid "File menu"
+msgstr "Dateimenü"
+
+#: glade1/interface.c:2264 po/gtkmorph.glade.c:167
+msgid ""
+"show animated sequence after saving it all  (needs 'animate' command from "
+"imagemagick)"
+msgstr ""
+"zeigen Sie die bewegte Abfolge nachdem alles gespeichert wurde (benötigt den "
+"»animate«-Befehl von Imagemagick)"
+
+#: glade1/interface.c:2318 po/gtkmorph.glade.c:174
+msgid " ok "
+msgstr "Ok"
+
+#: glade1/interface.c:2332 po/gtkmorph.glade.c:103 po/gtkmorph.glade.c:175
+msgid "cancel"
+msgstr "Abbruch"
+
+#: glade1/interface.c:2345 po/gtkmorph.glade.c:176
+msgid "help"
+msgstr "Hilfe"
+
+#: po/gtkmorph.glade.c:102 po/gtkmorph.glade.c:189
+msgid "OK"
+msgstr "OK"
+
+#: po/gtkmorph.glade.c:190
+msgid "Cancel"
+msgstr "Abbruch"

@@ -1,0 +1,151 @@
+
+/****************************************************************************/
+/* UNUSED CODE UNUSED CODE UNUSED CODE UNUSED CODE UNUSED CODE */
+#ifdef UNUSED_CODE
+
+
+#ifdef ENTAGLE_AND_DONT_DISENTANGLE
+// unworking code
+	{
+	  if ( x< MESHGETXSAFE(mesh, lx-1,ly))
+	    x= MESHGETXSAFE(mesh, lx-1,ly);
+	  if(x> MESHGETXSAFE(mesh, lx+1,ly))
+	    x= MESHGETXSAFE(mesh, lx+1,ly);
+/* 	  if ( x< MESHGETXSAFE(mesh, lx-1,ly+1)) */
+/* 	    x= MESHGETXSAFE(mesh, lx-1,ly+1); */
+/* 	  if(x> MESHGETXSAFE(mesh, lx+1,ly-1)) */
+/* 	    x= MESHGETXSAFE(mesh, lx+1,ly-1); */
+	  if ( y< MESHGETYSAFE(mesh, lx,ly-1))
+	    y= MESHGETYSAFE(mesh, lx,ly-1);
+	  if(y> MESHGETYSAFE(mesh, lx,ly+1))
+	    y= MESHGETYSAFE(mesh, lx,ly+1);
+/* 	  if ( y< MESHGETYSAFE(mesh, lx-1,ly-1)) */
+/* 	    y= MESHGETYSAFE(mesh, lx-1,ly-1); */
+/* 	  if(y> MESHGETYSAFE(mesh, lx+1,ly+1)) */
+/* 	    y= MESHGETYSAFE(mesh, lx+1,ly+1); */
+	}
+#endif
+
+
+
+
+
+
+
+double smooth_thin_plate(MeshT *mesh, int keepborder,
+			 double maxx, double maxy)
+{  
+  int lp;
+  double change=0;
+  assert(mesh->nx>=2 && mesh->ny>=2);
+  for(lp =SMOOTH_ITERATIONS ; lp ; lp--) {
+    change+=smooth_thin_plate_once(mesh,keepborder,maxx,maxy);
+  }
+  return change;
+}
+
+static double smooth_thin_plate_once_old(MeshT *mesh, int keepborder ,
+				     double maxx, double maxy)
+{
+  int jx,jy,ix,iy,lx,ly;
+  const int nx=mesh->nx, ny=mesh->ny;
+  double x,y;
+  double ox,oy;
+  double meshx_D2[3][nx+2][ny+2];
+  double meshy_D2[3][nx+2][ny+2];
+  int k;
+  double ene=0, change=0;
+
+#ifdef PRESERVE_VARIANCE
+  const int anykind=0;
+  struct mesh_variance_s   bef=mesh_variance(mesh, anykind) ,  aft;
+#endif
+#ifdef RECOMPUTE_CHANGE
+  MeshT copymesh;
+  meshInit(&copymesh);
+  meshAlloc(&copymesh,nx,ny);
+  meshCopy(&copymesh,mesh);
+#endif
+
+
+  for (k=0;k<2;k++) {
+    for(jx=0; jx < nx+2 ; jx++)
+      for(jy=0; jy < ny+2  ; jy++) {
+	
+	meshx_D2[k][jx][jy]=0;
+	meshy_D2[k][jx][jy]=0;
+	for(ix=0; ix <= 2 ; ix++)
+	  for(iy=0; iy <= 2  ; iy++) {
+ 	    meshx_D2[k][jx][jy]+=
+	      MESHGETXSAFE(mesh, jx-ix,jy-iy)* D2[k][ix][iy];
+	    meshy_D2[k][jx][jy]+=
+	      MESHGETYSAFE(mesh, jx-ix,jy-iy)* D2[k][ix][iy];
+	  }
+
+	ene+=(meshx_D2[k][jx][jy]*meshx_D2[k][jx][jy]+
+	      meshy_D2[k][jx][jy]*meshy_D2[k][jx][jy]);
+      }
+  }
+  //fprintf(stderr,"\r ene %g ",ene/nx/ny);
+
+  for(lx=0; lx < nx ; lx++)
+    for(ly=0; ly < ny  ; ly++) {
+      if( 0  ==  meshGetLabel(mesh,lx,ly)) {
+	double derEx=0,derEy=0;
+	x=meshGetx(mesh, lx,ly);
+	y=meshGety(mesh, lx,ly);
+
+	for (k=0;k<2;k++) 
+	  for(ix=0; ix <= 2 ; ix++)
+	    for(iy=0; iy <= 2  ; iy++) {
+	      derEx+= meshx_D2[k][lx-ix+2][ly-iy+2] * D2[k][ix][iy];
+	      derEy+= meshy_D2[k][lx-ix+2][ly-iy+2] * D2[k][ix][iy];
+	    }
+
+
+
+	ox=x; oy=y;
+
+	if(keepborder &&  lx==0)
+	  x=0;
+	else
+	  if (keepborder && lx == nx-1)
+	    x=maxx;//WE DONT REALLY KNOW x=meshMaxx(mesh);
+	  else 
+	    {x-=derEx/8./nx;    
+	    if(keepborder)
+	      x=CLAMP(x,0,maxx);//AVOID CRISIS
+	    else
+	      x=CLAMP(x,-300,700);//AVOID CRISIS
+	    }
+
+	if(keepborder &&  ly==0 )
+	  y=0;
+	else
+	  if(keepborder && ly == ny-1)
+	    y=maxy;//WE DONT REALLY KNOW  y=meshMaxy(mesh);
+	  else
+	    { y-=derEy/8./ny;    
+	    if(keepborder)
+	      y=CLAMP(y,0,maxy); //AVOID CRISIS
+	    else
+	      y=CLAMP(y,-300,700); //AVOID CRISIS
+	    }
+
+	meshSetNoundo(mesh, lx,ly,x,y);
+	change+=sqrt((x-ox)*(x-ox) + (y-oy)*(y-oy));
+      }
+    }
+
+#ifdef PRESERVE_VARIANCE
+  aft=mesh_variance(mesh, anykind);
+  mesh_normalize_variance(mesh,anykind,bef,aft);
+#endif
+#ifdef RECOMPUTE_DISTANCE
+  change=meshDistance(mesh,&copymesh,1);
+  meshFreeReally(&copymesh);
+#endif
+
+  return change;
+}
+#endif

@@ -1,0 +1,3 @@
+usr/lib/libmorph*.so
+usr/lib/libmorph*.a
+usr/include/xmorph/*

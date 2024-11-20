@@ -1,0 +1,3 @@
+?package(gtkmorph): needs="X11" section="Applications/Graphics" \
+  title="Gtkmorph" command="/usr/bin/gtkmorph" \
+  longtitle="warp and morph multiple images, makes morphing movies"

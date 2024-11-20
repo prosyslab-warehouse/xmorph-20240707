@@ -1,0 +1,33 @@
+<gtkmorph session>
+<resulting_size>
+300 400
+</resulting_size>
+<image>
+<image file in>
+image1.png
+</image file in>
+<preserve aspect>
+1
+</preserve aspect>
+<mesh file>
+image1.png.mesh
+</mesh file>
+<morph factors>
+0.500000 0.500000
+</morph factors>
+</image>
+<image>
+<image file in>
+image2.png
+</image file in>
+<preserve aspect>
+1
+</preserve aspect>
+<mesh file>
+image2.png.mesh
+</mesh file>
+<morph factors>
+0.500000 0.500000
+</morph factors>
+</image>
+</gtkmorph session>

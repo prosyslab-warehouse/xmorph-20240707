@@ -1,0 +1,16 @@
+### copy this parameter file to the local directory
+### if the output name is 'frame' call this file 'frame.param'
+### (see the movie help)
+### explanation of parameters is in the help of mpeg_encode
+PATTERN IBBPBBPBBPBBPBB
+GOP_SIZE 30
+#should be a divisor of total height/16 of the image
+SLICES_PER_FRAME %d
+PIXEL HALF
+RANGE 10
+PSEARCH_ALG TWOLEVEL
+BSEARCH_ALG CROSS2
+IQSCALE 2
+PQSCALE 4
+BQSCALE 4
+REFERENCE_FRAME DECODED

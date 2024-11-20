@@ -1,0 +1,9 @@
+
+this is a test for the antialiasing warp
+
+run
+ gtkmorph gtkmorph.session
+
+and create two movies 
+first one with antialiasing on,
+second one without antialiasing

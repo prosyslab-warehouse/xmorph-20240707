@@ -1,0 +1,4 @@
+
+In sep 2000, Xmorph has been completely reorganized
+to use the autoconf/automake. Please read the "THE NEW PROJECT"
+section in the README file.

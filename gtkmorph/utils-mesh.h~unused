@@ -1,0 +1,14 @@
+
+/* inline static gboolean mesh_need_saving(int lp) */
+/* { */
+/*   return sp->im_widget[lp] && sp->im_mesh[lp].changed>0; */
+/* } */
+
+/* did the user use it somehow?  */
+/* inline static gboolean image_used(int lp) */
+/* { */
+/*   return sp->im_widget[lp] && ( sp->im_mesh_filename[lp] || */
+/* 				sp->im_mesh[lp].changed>0 || */
+/* 				sp->im_filename_in[lp] ||  */
+/* 				sp->im_filename_out[lp]); */
+/* } */

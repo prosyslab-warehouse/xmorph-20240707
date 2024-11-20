@@ -1,0 +1,156 @@
+
+
+gchar * compute_title (int j)
+{
+  if(sp->im_widget_is_difference_mesh[j] ) {
+    const gchar * R = _("differential mesh");
+    gchar  *N;
+    if(sp->im_mesh_filename[j] ) 
+      N=g_strdup_printf("%s %d '%s'",R,j,sp->im_mesh_filename[j]);
+    else
+      N=g_strdup_printf("%s %d",R,j);
+    return N;
+  } else {
+    const gchar * R = _("resulting image");
+    gchar *I = R, *N;
+    if(j != MAIN_WIN)
+	/* warning: due to main.c:144 , this _("input image") will always
+	   be translated using a UTF-8 locale, regardless of the real LANG setting */
+      I = g_strdup_printf("%s %d",_("input image"),j);
+    if(sp->im_filename_in[j] ) 
+      N=g_strdup_printf("%s '%s'",I, sp->im_filename_in[j]);
+    else
+      N=g_strdup(I);
+    if (I!=R) g_free(I);
+    return N;
+  }  
+}
+
+
+
+
+/*********************** 
+			 some commonly used routines 
+********************** 
+*/
+
+
+
+void set_sensitive(GtkWidget * widget, gboolean flag)
+{
+  if(flag) {
+    gtk_widget_show(widget);  
+    gtk_widget_set_sensitive(widget,flag);
+  } else {
+    if(settings_get_value("hide unusable"))
+      {
+      	gtk_widget_hide(widget);
+      }
+    else {
+      gtk_widget_show(widget);  
+      gtk_widget_set_sensitive(widget,flag);
+    }
+  }
+}
+
+
+void set_info_label(gchar *t)
+{
+  static GtkWidget *m=NULL;
+  if(!m) m=lookup_widget(sp->im_widget[MAIN_WIN],"main_info_label");
+  if(m) {
+    gtk_label_set_text(m,t);
+  } 
+}
+
+
+
+
+
+
+
+/* linking callbacks to optionmenu does not work...
+  this comes from the glade FAQ */
+void
+on_optionmenu_editview__selected (GtkMenuShell *menu_shell,
+                    gpointer data)
+{
+  GtkWidget *active_item;
+  gint item_index;
+
+  /* the following fails: the menu_shell has a different window
+    int i=
+    GPOINTER_TO_UINT(gtk_widget_get_data_top(GTK_WIDGET(data),
+					     "imagenum")); 
+  */
+  int i=
+    GPOINTER_TO_UINT(data);
+  g_assert(i>0);
+
+  active_item = gtk_menu_get_active (GTK_MENU (menu_shell));
+  item_index = g_list_index (menu_shell->children, active_item);
+
+  /* thanks GOD this works!!
+    g_print ("In on_option_selected active: %i\n", item_index);*/
+  sp->im_editview[i]=item_index;
+
+  g_debug("on_optionmenu_editview__selected %d is now %d ",i,item_index);
+
+  editview_callback(i);
+#ifndef IS_PLYMORPH
+  drawingarea_configure(i);
+#endif
+  MY_GTK_DRAW(sp->im_widget[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************
+
+
+setup_handlebox_factors()
+
+if there is only one image , then we may only warp it
+so the handlebox is hidden
+
+otherwise if in showmeshes mode, they are shown,
+and the user may set the factors and warp the image
+
+***********************************/
+void
+setup_handlebox_factor(int lp,int force)
+{
+#ifndef IS_PLYMORPH
+  if(sp->im_widget_is_difference_mesh[lp]) return;
+#endif
+  GtkWidget* hb= lookup_widget  ( sp->im_widget[lp]  ,
+				  "handlebox_factors");
+  g_assert(hb);
+  // these are really to be hidden!
+  //set_sensitive(hb,( sp->max_wins>1 
+  //		     && (sp->im_editview[lp] == EDITVIEW_SHOWMESHES  
+			 // ||sp->im_editview[lp] == EDITVIEW_SHOW)
+  //		     )));
+  //return ;
+  if(  sp->max_wins>1 && (force 
+#ifndef IS_PLYMORPH
+			  || sp->im_editview[lp] == EDITVIEW_SHOWMESHES
+#endif
+			  ))
+    gtk_widget_show(hb);
+  else
+    gtk_widget_hide(hb);
+} 
+
+
+
